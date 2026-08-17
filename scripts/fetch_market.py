@@ -122,7 +122,7 @@ def fetch_limitup_sina(pages=7):
     return lim
 
 # ---------------- 跌停列表（新浪，与 limit_up_sina 同源，避开东财 push2 的 502） ----------------
-def fetch_limitdown_sina(pages=7):
+def fetch_limitdown_sina(pages=12):
     """新浪 getHQNodeData 按跌幅升序，扫前若干页统计跌停家数 + 列表（跌停恒居前）。"""
     lim = 0
     rows = []
@@ -140,8 +140,7 @@ def fetch_limitdown_sina(pages=7):
                     lim += 1
                     rows.append({"code": r.get("code"), "name": r.get("name"),
                                  "pct": cp, "reason": ""})
-                else:
-                    return lim, rows
+                # 不早退：新浪 hs_a 升序首只未必是最跌股，需扫多页收集
         except Exception:
             break
         time.sleep(0.4)
