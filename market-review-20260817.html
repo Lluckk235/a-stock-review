@@ -8,90 +8,107 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>A股收盘复盘 2026-08-17</title>
 <style>
-:root{--red:#f5494d;--green:#00b070;--flat:#b9c0cc;--bg:#f3f4f6;--card:#ffffff;--ink:#1a1d24;--mut:#8a909c;--line:#e9ebef;--soft:#f7f8fa}
+:root{--red:#f5494d;--green:#00b070;--flat:#b9c0cc;--bg:#f4f5f7;--card:#ffffff;--ink:#111827;--mut:#6b7280;--line:#e5e7eb;--soft:#f8fafc;--dark:#101827}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;padding:20px;line-height:1.5}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,"PingFang SC","Microsoft YaHei",system-ui,sans-serif;padding:18px;line-height:1.5}
 .wrap{max-width:920px;margin:0 auto}
-header{text-align:center;padding:14px 0 6px}
-header h1{font-size:22px;letter-spacing:1px;color:#1a1d24}
-header .date{color:var(--mut);font-size:13px;margin-top:4px}
-.verdict{margin:14px 0;padding:18px;border-radius:14px;background:linear-gradient(135deg,#fff5f5,#fdeaea);border:1px solid #f6dada;text-align:center}
-.vtag{display:inline-block;font-size:12px;color:#f5494d;background:#fdeaea;border-radius:20px;padding:3px 12px;margin-bottom:8px;letter-spacing:1px}
-.verdict .q{font-size:30px;font-weight:800}
-.verdict .sub{color:var(--mut);margin-top:6px;font-size:14px}
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
-.kpi{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:14px 8px;text-align:center}
-.kpi .v{font-size:24px;font-weight:700}
-.kpi .l{color:var(--mut);font-size:12px;margin-top:4px}
-section{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0}
-section h3{font-size:15px;margin-bottom:12px;color:#2a2f3a;border-left:3px solid var(--red);padding-left:8px}
-.grid2{display:grid;grid-template-columns:160px 1fr;gap:16px;align-items:center}
-.bar-fill{display:block;height:12px;border-radius:6px}
+.paper{background:#fff;border-radius:20px;border:1px solid var(--line);box-shadow:0 12px 34px rgba(15,23,42,.08);padding:22px}
+header{padding:2px 4px 16px}
+header h1{font-size:30px;line-height:1.15;font-weight:900;letter-spacing:0;color:#050816}
+header .date{color:var(--mut);font-size:14px;margin-top:8px}
+.hero{display:grid;grid-template-columns:190px 1fr;gap:20px;align-items:center;background:#fff4f4;border:1px solid #ffd7d8;border-radius:16px;padding:16px 20px;margin-bottom:20px}
+.heat{font-size:74px;line-height:.9;font-weight:950;color:var(--red);letter-spacing:0}
+.heat small{font-size:34px}
+.hero h2{font-size:24px;line-height:1.25;margin-bottom:8px}
+.tag{display:inline-flex;align-items:center;background:var(--red);color:#fff;border-radius:8px;padding:7px 14px;font-weight:800;font-size:15px}
+.hero-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px;color:#1f2937;font-weight:800}
+.hero-metrics span{display:block;color:var(--mut);font-size:12px;font-weight:650;margin-top:2px}
+.section-title{display:flex;align-items:center;gap:8px;font-size:19px;margin:18px 0 10px;color:#111827}
+.section-title span{color:var(--red);font-size:22px;border-bottom:3px solid var(--red);line-height:1}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.metric-tile{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 10px;text-align:center;box-shadow:0 4px 12px rgba(15,23,42,.04)}
+.metric-tile strong{display:block;font-size:32px;line-height:1.1;font-weight:900}
+.metric-tile span{display:block;color:#4b5563;font-size:13px;margin-top:6px;font-weight:650}
+.metric-tile.red strong{color:var(--red)}.metric-tile.orange strong{color:#f59e0b}.metric-tile.blue strong{color:#2563eb}
+.panel{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;margin-bottom:18px;box-shadow:0 4px 14px rgba(15,23,42,.04)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
+.breadth-wrap{display:grid;gap:12px}
+.breadth-counts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center}
+.breadth-counts b{display:block;font-size:26px;line-height:1;color:var(--red)}.breadth-counts .down b{color:var(--green)}.breadth-counts .flat b{color:#64748b}
+.breadth-counts span{font-size:13px;color:var(--mut);font-weight:700}
+.bar-fill{display:block;height:12px;border-radius:999px}
 .bar-fill.up{background:var(--red)}
 .bar-fill.dn{background:var(--green)}
 .bar-fill.flat{background:#b9c0cc}
-.barrow{display:grid;grid-template-columns:140px 1fr 80px;gap:8px;align-items:center;margin:7px 0}
+.barrow{display:grid;grid-template-columns:150px 1fr 76px;gap:8px;align-items:center;margin:10px 0}
 .bl{font-size:13px;color:#5a6373}
-.btrack{background:#eef0f3;border-radius:6px;height:12px;overflow:hidden}
+.btrack{background:#eef0f3;border-radius:999px;height:12px;overflow:hidden}
 .bv{font-size:13px;text-align:right;font-variant-numeric:tabular-nums}
-.breadth{display:flex;height:22px;border-radius:6px;overflow:hidden;background:#eef0f3}
-.bsseg{height:100%}
+.breadth{display:flex;height:20px;border-radius:999px;overflow:hidden;background:#eef0f3}
+.bseg{height:100%}
 .blegend{display:flex;gap:14px;margin-top:8px;font-size:12px;flex-wrap:wrap}
-.cards4{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
-.card{background:var(--soft);border:1px solid var(--line);border-radius:10px;padding:12px}
+.cards4{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.card{background:var(--soft);border:1px solid var(--line);border-radius:12px;padding:13px}
 .card.wide{grid-column:1/-1}
 .card h4{font-size:13px;color:#6b7280;margin-bottom:8px}
 .srow{display:flex;justify-content:space-between;font-size:13px;padding:3px 0;border-bottom:1px solid #eef0f3}
 .mtext{font-size:13px;line-height:1.7;color:#3a3f4a}
-.thermo .ax{fill:#9aa3b5;font-size:9px}
-.thermo .thermo-val{fill:#1a1d24;font-size:13px;font-weight:700}
-.thermo .lbl{fill:#5a6373;font-size:11px}
 .ladder .lbl{fill:#5a6373;font-size:11px}
+.strength-row{display:grid;grid-template-columns:120px 70px 1fr;gap:10px;align-items:center;margin:9px 0;font-size:14px}
+.strength-row i{height:11px;border-radius:999px;background:#eef2f7;overflow:hidden}.strength-row em{display:block;height:100%;border-radius:999px;background:var(--red)}
+.mini-row{display:flex;justify-content:space-between;border-bottom:1px solid #eef0f3;padding:7px 0;font-size:14px}
+.ladder-pills{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ladder-pill{border:1px solid #fed7aa;background:#fff7ed;border-radius:999px;padding:9px 12px;text-align:center}.ladder-pill b{color:#d97706;margin-right:8px}.ladder-pill span{color:#7c2d12;font-size:13px}
+.observe-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.observe-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px;min-height:94px}.observe-card b{display:block;font-size:15px;margin-bottom:7px}.observe-card span{font-size:14px;color:#374151;line-height:1.6}
+.final-banner{background:var(--dark);color:#fff;border-radius:10px;padding:13px 16px;font-size:17px;font-weight:850;text-align:center;margin:18px 0 10px}
 .na{color:#b45309;font-size:12px;background:#fff7ed;border:1px solid #fde8c8;padding:8px 10px;border-radius:8px;margin-top:6px}
 .obs{font-size:13px;line-height:1.8;color:#3a3f4a}
 .obs b{color:var(--red)}
 footer{color:var(--mut);font-size:11px;margin-top:18px;line-height:1.7}
 footer ul{margin:6px 0 6px 18px}
 .disclaimer{background:#fff1f1;color:#d43939;border:1px solid #f6dada;padding:10px 12px;border-radius:8px;margin-top:10px;font-size:12px}
+@media (max-width:720px){body{padding:10px}.paper{padding:16px;border-radius:16px}header h1{font-size:26px}.hero{grid-template-columns:1fr;gap:12px}.heat{font-size:66px}.hero-metrics,.metrics,.split,.ladder-pills,.observe-grid{grid-template-columns:1fr 1fr}.barrow{grid-template-columns:118px 1fr 70px}.strength-row{grid-template-columns:104px 62px 1fr}}
+@media (max-width:430px){.metrics,.hero-metrics,.breadth-counts,.cards4,.ladder-pills,.observe-grid{grid-template-columns:1fr 1fr}.metric-tile strong{font-size:28px}.split{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap"><div class="paper">
 <header>
   <h1>A股收盘复盘 · 主线与情绪</h1>
-  <div class="date">2026-08-17（Monday）· 静态快照，非实时</div>
+  <div class="date">2026-08-17（Monday）｜收盘静态快照｜数据截至收盘后</div>
 </header>
 
-<section class="verdict">
-  <div class="vtag">① 定性研判</div>
-  <div class="q" style="color:#f5494d">70° 高温</div>
-  <div class="sub">涨停 106 家 · 封板率 89.8% · 连板高度 4 板 · 晋级率 19.2%</div>
-</section>
-
-<section>
-  <h3>② 情绪四指标</h3>
-  <div class="kpis">
-    <div class="kpi"><div class="v" style="color:#f5494d">106</div><div class="l">涨停家数</div></div>
-    <div class="kpi"><div class="v" style="color:#f5494d">89.8%</div><div class="l">封板率</div></div>
-    <div class="kpi"><div class="v" style="color:#ffd32a">4</div><div class="l">连板高度(板)</div></div>
-    <div class="kpi"><div class="v" style="color:#f5494d">19.2%</div><div class="l">晋级率</div></div>
+<section class="hero">
+  <div class="heat">70<small>°</small></div>
+  <div>
+    <h2>高温区 · 主线偏强</h2>
+    <span class="tag">真主线：集成电路封测</span>
+    <div class="hero-metrics">
+      <div>红盘 80%<span>市场宽度</span></div>
+      <div>涨停 106<span>情绪高度</span></div>
+      <div>跌停 2<span>风险温度</span></div>
+    </div>
   </div>
 </section>
 
-<section>
-  <h3>③ 情绪温度计 · 市场广度</h3>
-  <div class="grid2">
-    <div style="text-align:center">
-    <svg viewBox="0 0 130 290" class="thermo" aria-label="情绪温度计">
-      <rect x="35" y="20" width="20" height="240" rx="10" fill="#eceef2" stroke="#d4dae2"/>
-      <rect x="35" y="92.0" width="20" height="168.0" rx="10" fill="#e84118"/>
-      <circle cx="45" cy="260" r="16" fill="#e84118"/>
-      <line x1="70" y1="20" x2="70" y2="260" stroke="#cfd6df"/>
-      <line x1="70" y1="260.0" x2="76" y2="260.0" stroke="#cfd6df"/><text x="80" y="264.0" class="ax">0</text><line x1="70" y1="212.0" x2="76" y2="212.0" stroke="#cfd6df"/><text x="80" y="216.0" class="ax">20</text><line x1="70" y1="164.0" x2="76" y2="164.0" stroke="#cfd6df"/><text x="80" y="168.0" class="ax">40</text><line x1="70" y1="116.0" x2="76" y2="116.0" stroke="#cfd6df"/><text x="80" y="120.0" class="ax">60</text><line x1="70" y1="68.0" x2="76" y2="68.0" stroke="#cfd6df"/><text x="80" y="72.0" class="ax">80</text><line x1="70" y1="20.0" x2="76" y2="20.0" stroke="#cfd6df"/><text x="80" y="24.0" class="ax">100</text>
-      <text x="45" y="84.0" text-anchor="middle" class="thermo-val">70°</text>
-    </svg></div>
-    <div>
-      
+<h3 class="section-title"><span>01</span>情绪指标</h3>
+<section class="metrics">
+  <div class="metric-tile red"><strong>106</strong><span>涨停</span></div>
+  <div class="metric-tile red"><strong>89.8%</strong><span>封板率</span></div>
+  <div class="metric-tile orange"><strong>4</strong><span>最高高度</span></div>
+  <div class="metric-tile blue"><strong>19.2%</strong><span>连板晋级率</span></div>
+</section>
+
+<h3 class="section-title"><span>02</span>市场广度与指数结构</h3>
+<section class="panel split">
+  <div class="breadth-wrap">
+    <div class="breadth-counts">
+      <div><b>5274</b><span>上涨</span></div>
+      <div class="down"><b>1288</b><span>下跌</span></div>
+      <div class="flat"><b>—</b><span>平盘</span></div>
+    </div>
+    
     <div class="breadth">
       <div class="bseg" style="width:80.4%;background:#f5494d"></div>
       <div class="bseg" style="width:19.6%;background:#00b070"></div>
@@ -100,7 +117,8 @@ footer ul{margin:6px 0 6px 18px}
     <div class="blegend"><span style="color:#f5494d">涨 5274 (80.4%)</span>
       <span style="color:#00b070">跌 1288 (19.6%)</span>
       <span style="color:#9aa3b5">平 0</span></div>
-      <div style="margin-top:14px">
+  </div>
+  <div>
     <div class="barrow">
       <span class="bl">上证指数 3982.65</span>
       <span class="btrack"><span class="bar-fill up" style="width:34.1%"></span></span>
@@ -116,41 +134,46 @@ footer ul{margin:6px 0 6px 18px}
       <span class="btrack"><span class="bar-fill up" style="width:100.0%"></span></span>
       <span class="bv" style="color:#f5494d">+4.14%</span>
     </div></div>
-    </div>
+</section>
+
+<h3 class="section-title"><span>03</span>主线强度与资金流向</h3>
+<section class="panel split">
+  <div>
+    <h4>主线强度</h4>
+    
+        <div class="strength-row">
+          <span>其他养殖</span>
+          <b style="color:#f5494d">10.69%</b>
+          <i><em style="width:100.0%"></em></i>
+        </div>
+        <div class="strength-row">
+          <span>种子</span>
+          <b style="color:#f5494d">6.62%</b>
+          <i><em style="width:100.0%"></em></i>
+        </div>
+        <div class="strength-row">
+          <span>集成电路封测</span>
+          <b style="color:#f5494d">5.76%</b>
+          <i><em style="width:92.2%"></em></i>
+        </div>
+  </div>
+  <div>
+    <h4>主力净流入</h4>
+    <div class="mini-row"><span>电子</span><b style="color:#f5494d">+309.46亿</b></div><div class="mini-row"><span>半导体</span><b style="color:#f5494d">+195.48亿</b></div><div class="mini-row"><span>数字芯片设计</span><b style="color:#f5494d">+101.93亿</b></div>
   </div>
 </section>
 
-<section>
-  <h3>④ 指数表现</h3>
-  
-    <div class="barrow">
-      <span class="bl">上证指数 3982.65</span>
-      <span class="btrack"><span class="bar-fill up" style="width:34.1%"></span></span>
-      <span class="bv" style="color:#f5494d">+1.41%</span>
-    </div>
-    <div class="barrow">
-      <span class="bl">创业板指 3740.16</span>
-      <span class="btrack"><span class="bar-fill up" style="width:75.8%"></span></span>
-      <span class="bv" style="color:#f5494d">+3.14%</span>
-    </div>
-    <div class="barrow">
-      <span class="bl">科创50 1788.85</span>
-      <span class="btrack"><span class="bar-fill up" style="width:100.0%"></span></span>
-      <span class="bv" style="color:#f5494d">+4.14%</span>
-    </div>
-</section>
-
-<section>
-  <h3>⑤ 板块强弱</h3>
+<section class="panel">
   <div class="cards4">
-    <div class="card"><h4>行业涨幅榜</h4><div class="srow"><span>其他养殖</span><span style="color:#f5494d">10.69%</span></div><div class="srow"><span>种子</span><span style="color:#f5494d">6.62%</span></div><div class="srow"><span>集成电路封测</span><span style="color:#f5494d">5.76%</span></div><div class="srow"><span>集成电路制造</span><span style="color:#f5494d">5.49%</span></div><div class="srow"><span>半导体材料</span><span style="color:#f5494d">5.47%</span></div></div>
-    <div class="card"><h4>概念涨幅榜</h4><div class="srow"><span>昨日打二板以上表现</span><span style="color:#f5494d">5.98%</span></div><div class="srow"><span>高带宽内存</span><span style="color:#f5494d">5.73%</span></div><div class="srow"><span>昨日连板_含一字</span><span style="color:#f5494d">5.68%</span></div><div class="srow"><span>玻璃基板</span><span style="color:#f5494d">5.15%</span></div><div class="srow"><span>培育钻石</span><span style="color:#f5494d">5.06%</span></div></div>
-    <div class="card"><h4>主力资金流入 Top5</h4><div class="srow"><span>电子</span><span style="color:#f5494d">309.46亿</span></div><div class="srow"><span>半导体</span><span style="color:#f5494d">195.48亿</span></div><div class="srow"><span>数字芯片设计</span><span style="color:#f5494d">101.93亿</span></div><div class="srow"><span>通信网络设备及器件</span><span style="color:#f5494d">63.82亿</span></div><div class="srow"><span>通信设备</span><span style="color:#f5494d">59.63亿</span></div></div>
-    <div class="card"><h4>跌幅居前</h4><div class="srow"><span>院线</span><span style="color:#00b070">-2.55%</span></div><div class="srow"><span>白酒Ⅱ</span><span style="color:#00b070">-2.13%</span></div><div class="srow"><span>白酒Ⅲ</span><span style="color:#00b070">-2.13%</span></div><div class="srow"><span>医美服务</span><span style="color:#00b070">-1.76%</span></div><div class="srow"><span>纺织鞋类制造</span><span style="color:#00b070">-1.31%</span></div></div></div>
+    <div class="card wide"><h4>相对强（主线）</h4><div class="mtext"><b>集成电路封测</b> 暂列相对强（涨幅 +5.76%，主力净流入 +46.09亿）</div></div>
+    <div class="card wide"><h4>退潮确认</h4><div class="mtext">暂无明确退潮信号；连板高度 4，梯队尚完整。</div></div>
+    <div class="card wide"><h4>高风险</h4><div class="mtext">炸板 12 只，追高日内回撤风险上升。</div></div>
+    <div class="card wide"><h4>活口</h4><div class="mtext">活口聚焦 <b>4连板</b> 天洋新材、金 螳 螂、澳洋健康。</div></div></div>
 </section>
 
-<section>
-  <h3>⑥ 涨停梯队</h3>
+<h3 class="section-title"><span>04</span>情绪高度（连板梯队）</h3>
+<section class="panel">
+  <div class="ladder-pills"><div class="ladder-pill"><b>4板</b><span>天洋新材、金 螳 螂</span></div><div class="ladder-pill"><b>3板</b><span>共进股份、神奇制药</span></div><div class="ladder-pill"><b>2板</b><span>桂发祥、中石科技</span></div></div>
   <svg viewBox="0 0 520 152" class="ladder">
         <text x="6" y="30" class="lbl">连板·4</text>
         <rect x="60" y="14" width="11.9" height="22" rx="4" fill="#f5494d"/>
@@ -166,24 +189,12 @@ footer ul{margin:6px 0 6px 18px}
         <text x="426.0" y="132" class="lbl">91只 金健米业,今飞凯达,深深房Ａ</text></svg>
 </section>
 
-<section>
-  <h3>⑦ 主线研判</h3>
-  <div class="cards4">
-    <div class="card wide"><h4>相对强（主线）</h4><div class="mtext"><b>集成电路封测</b> 暂列相对强（涨幅 +5.76%，主力净流入 +46.09亿）</div></div>
-    <div class="card wide"><h4>退潮确认</h4><div class="mtext">暂无明确退潮信号；连板高度 4，梯队尚完整。</div></div>
-    <div class="card wide"><h4>高风险</h4><div class="mtext">炸板 12 只，追高日内回撤风险上升。</div></div>
-    <div class="card wide"><h4>活口</h4><div class="mtext">活口聚焦 <b>4连板</b> 天洋新材、金 螳 螂、澳洋健康。</div></div></div>
+<h3 class="section-title"><span>05</span>明日观察锚点</h3>
+<section class="observe-grid">
+  <div class="observe-card"><b>主线持续性</b><span>观察 集成电路封测 明天是否继续带量走强。</span></div><div class="observe-card"><b>情绪退潮阈值</b><span>封板率低于 60% 或炸板放大时降低接力预期。</span></div><div class="observe-card"><b>量能验证</b><span>重点看 资金是否继续流入，避免只看涨幅。</span></div><div class="observe-card"><b>高位风险</b><span>当前情绪 70° 高温，高温后注意分化。</span></div>
 </section>
 
-<section>
-  <h3>⑧ 隔夜 / 明日观察锚</h3>
-  <div class="obs">
-    · 情绪温度 <b>70°（高温）</b>，若次日回落至冰点区关注冰点反转；若冲高温区防一致后分化。<br>
-    · 盯紧连板最高标 <b>4板</b> 报价与封单，断板即退潮信号。<br>
-    · 主线 <b>集成电路封测</b> 次日量能是否持续，缩量加速慎追。<br>
-    · 封板率 89.8% 为日内接力强度锚，低于 60% 降低仓位预期。
-  </div>
-</section>
+<div class="final-banner">高温情绪不等于诱多；主攻仍看 集成电路封测，明日验证资金与量能是否继续共振。</div>
 
 <footer>
   <div>⑨ 数据口径与免责：腾讯 qt.gtimg.cn（指数）· 东财 push2（板块/涨跌/跌停）· 东财涨停板专题(akshare: 涨停池/炸板池/昨日池) 真实计算连板高度·封板率·晋级率 · 新浪（涨停家数兜底）· 推送：Bark / 企业微信机器人 webhook / WxPusher（配置其一即发，未配跳过）。</div>
@@ -191,7 +202,7 @@ footer ul{margin:6px 0 6px 18px}
   <ul><li>indices: ✓</li><li>breadth_em: ✓</li><li>limit_up_sina: ✓</li><li>sectors: ✓</li><li>concepts: ✓</li><li>board_akshare: ✓</li><li>limit_up: ✓</li><li>limit_down: ✓</li></ul>
   <div class="disclaimer">⚠️ 非投资建议：本页为市场情绪与数据的客观快照，不构成任何买卖建议。投资有风险，决策需独立判断、自负盈亏。</div>
 </footer>
-</div>
+</div></div>
 <script>
 // 生成时间填充（无其他外链）
 (function(){
