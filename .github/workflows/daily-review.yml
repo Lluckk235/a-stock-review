@@ -1,7 +1,16 @@
 name: A股收盘复盘
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/daily-review.yml'
+      - 'assets/**'
+      - 'requirements.txt'
+      - 'scripts/**'
   schedule:
+    # 07:30 UTC = 15:30 Beijing time.
     - cron: '30 7 * * 1-5'
   workflow_dispatch:
 
@@ -23,13 +32,12 @@ jobs:
 
       - name: Fetch market data
         run: python scripts/fetch_market.py
-        env:
-          BARK_KEY: ${{ secrets.BARK_KEY }}
 
       - name: Generate review HTML
         run: python scripts/generate_review.py
         env:
-          BARK_KEY: ${{ secrets.BARK_KEY }}
+          # Code pushes publish the page but do not send a Bark notification.
+          BARK_KEY: ${{ github.event_name == 'push' && '' || secrets.BARK_KEY }}
           PAGES_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
 
       - name: Generate index page
