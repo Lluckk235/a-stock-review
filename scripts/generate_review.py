@@ -311,7 +311,9 @@ def build_html(d):
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32-v20260817.png">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon-v20260817.png">
-<title>A股收盘复盘 {today}</title>
+<meta name="apple-mobile-web-app-title" content="A股复盘">
+<meta name="application-name" content="A股复盘">
+<title>A股复盘</title>
 <style>
 :root{{--red:{RED};--green:{GREEN};--flat:{FLAT};--bg:#f4f5f7;--card:#ffffff;--ink:#111827;--mut:#6b7280;--line:#e5e7eb;--soft:#f8fafc;--dark:#101827}}
 *{{box-sizing:border-box;margin:0;padding:0}}

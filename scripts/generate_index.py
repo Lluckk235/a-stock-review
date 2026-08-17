@@ -25,7 +25,9 @@ index_html = f"""<!DOCTYPE html>
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32-v20260817.png">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon-v20260817.png">
-<title>A股收盘复盘</title>
+<meta name="apple-mobile-web-app-title" content="A股复盘">
+<meta name="application-name" content="A股复盘">
+<title>A股复盘</title>
 <style>
 body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:680px;margin:40px auto;padding:0 20px;background:#f3f4f6;color:#1a1d24}}
 h1{{font-size:20px;border-bottom:2px solid #e9ebef;padding-bottom:12px}}
