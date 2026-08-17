@@ -37,7 +37,7 @@ jobs:
         run: python scripts/generate_review.py
         env:
           # Code pushes publish the page but do not send a Bark notification.
-          BARK_KEY: ${{ github.event_name == 'push' && '' || secrets.BARK_KEY }}
+          BARK_KEY: ${{ github.event_name != 'push' && secrets.BARK_KEY || '' }}
           PAGES_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
 
       - name: Generate index page
