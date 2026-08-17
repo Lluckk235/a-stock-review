@@ -328,8 +328,10 @@ if __name__ == "__main__":
     demo = "--demo" in sys.argv
     out_path = "--out" in sys.argv
     data = collect(demo=demo)
-    os.makedirs("/Users/melody/WorkBuddy/2026-08-14-16-36-41/outputs/review", exist_ok=True)
-    raw = "/Users/melody/WorkBuddy/2026-08-14-16-36-41/outputs/review/market_raw.json"
+    BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    OUT_DIR = os.path.join(BASE, "outputs", "review")
+    os.makedirs(OUT_DIR, exist_ok=True)
+    raw = os.path.join(OUT_DIR, "market_raw.json")
     with open(raw, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     print("WROTE", raw)

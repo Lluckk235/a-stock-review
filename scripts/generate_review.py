@@ -7,12 +7,12 @@ generate_review.py — A股收盘复盘 单页 HTML 生成器
       校验: 外链=0 / 标签平衡 / 内联JS过 node --check
       可选推送: 项目根 .env 配置 BARK_KEY(iOS Bark)/WECOM_WEBHOOK_URL(企微)/WXPUSHER_APP_TOKEN+WXPUSHER_UIDS 其一即自动推送；都未配则跳过
 """
-import json, sys, os, re, datetime, urllib.request, urllib.parse
+import json, sys, os, re, datetime, urllib.request, urllib.parse, shutil
 
-ROOT = "/Users/melody/WorkBuddy/2026-08-14-16-36-41"
-RAW = f"{ROOT}/outputs/review/market_raw.json"
-OUTDIR = f"{ROOT}/outputs/review"
-NODE = "/Users/melody/.workbuddy/binaries/node/versions/22.22.2/bin/node"
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW = os.path.join(ROOT, "outputs", "review", "market_raw.json")
+OUTDIR = os.path.join(ROOT, "outputs", "review")
+NODE = shutil.which("node") or ""  # GitHub Actions 上若无 node 则跳过 JS 校验
 
 RED = "#f5494d"; GREEN = "#00b070"; FLAT = "#b9c0cc"
 
@@ -338,15 +338,16 @@ def validate(html, path):
         o = len(re.findall(rf'<{tag}[\s>]', html)); c = html.count(f'</{tag}>')
         if o != c:
             issues.append(f"<{tag}> 开{o}/闭{c} 不平衡")
-    # inline JS node --check
+    # inline JS node --check (无 node 环境则跳过)
     m = re.search(r'<script>(.*?)</script>', html, re.S)
-    if m:
+    if m and NODE:
         js = f"{path}.inline.js"
         with open(js, "w") as f:
             f.write(m.group(1))
         rc = os.system(f"{NODE} --check {js} 2>/dev/null")
         if rc != 0:
             issues.append("内联JS未通过 node --check")
+        os.remove(js)
     return issues
 
 def load_env_file():
