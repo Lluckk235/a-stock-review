@@ -197,6 +197,9 @@ def build_html(d):
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>A股收盘复盘 {today}</title>
 <style>
 :root{{--red:{RED};--green:{GREEN};--flat:{FLAT};--bg:#f3f4f6;--card:#ffffff;--ink:#1a1d24;--mut:#8a909c;--line:#e9ebef;--soft:#f7f8fa}}

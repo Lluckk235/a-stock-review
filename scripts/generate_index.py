@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """生成 index.html 列出所有历史复盘页面，部署到 GitHub Pages 首页。"""
-import os, glob, re
+import os, glob, re, shutil
 
 dir_path = os.path.dirname(os.path.abspath(__file__))
-site_dir = os.path.join(os.path.dirname(os.path.dirname(dir_path)), "outputs", "review")
+repo_root = os.path.dirname(dir_path)
+site_dir = os.path.join(repo_root, "outputs", "review")
 site_dir = os.environ.get("SITE_DIR", site_dir)
 
 html_files = sorted(glob.glob(os.path.join(site_dir, "market-review-*.html")), reverse=True)
@@ -20,6 +21,9 @@ for f in html_files:
 
 index_html = f"""<!DOCTYPE html>
 <html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>A股收盘复盘</title>
 <style>
 body{{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;max-width:680px;margin:40px auto;padding:0 20px;background:#f3f4f6;color:#1a1d24}}
@@ -33,6 +37,14 @@ a:hover{{text-decoration:underline}}
 <h1>A股收盘复盘 · 历史归档</h1>
 <ul>{"".join(items) if items else '<li class="empty">暂无复盘记录</li>'}</ul>
 </body></html>"""
+
+# 复制 assets 图标到站点目录：浏览器标签(favicon) 与 Safari「添加到主屏幕」(apple-touch-icon) 共用
+os.makedirs(site_dir, exist_ok=True)
+assets_dir = os.path.join(repo_root, "assets")
+if os.path.isdir(assets_dir):
+    for a in os.listdir(assets_dir):
+        if a.lower().endswith((".png", ".ico")):
+            shutil.copy2(os.path.join(assets_dir, a), os.path.join(site_dir, a))
 
 out = os.path.join(site_dir, "index.html")
 with open(out, "w", encoding="utf-8") as f:
