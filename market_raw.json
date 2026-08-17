@@ -26,43 +26,14 @@
     }
   ],
   "breadth": {
+    "up": 5274,
+    "down": 1288,
     "limit_up_sina": 0,
     "limit_up": 106,
     "limit_up_source": "东财涨停池",
     "broken": 12
   },
-  "sectors_up": [
-    {
-      "code": "BK0420",
-      "name": "航空机场",
-      "pct": 0.17,
-      "inflow": 17659953.0
-    },
-    {
-      "code": "BK0421",
-      "name": "铁路公路",
-      "pct": 0.34,
-      "inflow": 7848597.0
-    },
-    {
-      "code": "BK0422",
-      "name": "物流",
-      "pct": 1.44,
-      "inflow": 141191616.0
-    },
-    {
-      "code": "BK0424",
-      "name": "水泥",
-      "pct": 1.51,
-      "inflow": 61435673.0
-    },
-    {
-      "code": "BK0427",
-      "name": "公用事业",
-      "pct": 0.46,
-      "inflow": -482287520.0
-    }
-  ],
+  "sectors_up": [],
   "sectors_down": [],
   "concepts_up": [],
   "inflow_top5": [],
@@ -123,9 +94,9 @@
   },
   "status": {
     "indices": "ok",
-    "breadth_em": "unreachable:HTTP Error 502: Bad Gateway",
+    "breadth_em": "ok",
     "limit_up_sina": "ok",
-    "sectors": "ok",
+    "sectors": "unreachable:HTTP Error 502: Bad Gateway",
     "concepts": "unreachable:HTTP Error 502: Bad Gateway",
     "sectors_detail": "unreachable:HTTP Error 502: Bad Gateway",
     "board_akshare": "ok",

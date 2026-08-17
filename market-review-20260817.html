@@ -3,6 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <title>A股收盘复盘 2026-08-17</title>
 <style>
 :root{--red:#f5494d;--green:#00b070;--flat:#b9c0cc;--bg:#f3f4f6;--card:#ffffff;--ink:#1a1d24;--mut:#8a909c;--line:#e9ebef;--soft:#f7f8fa}
@@ -88,7 +91,15 @@ footer ul{margin:6px 0 6px 18px}
       <text x="45" y="84.0" text-anchor="middle" class="thermo-val">70°</text>
     </svg></div>
     <div>
-      <div class="na">数据源暂不可达 · 涨跌家数待东财/腾讯数据</div>
+      
+    <div class="breadth">
+      <div class="bseg" style="width:80.4%;background:#f5494d"></div>
+      <div class="bseg" style="width:19.6%;background:#00b070"></div>
+      <div class="bseg" style="width:0.0%;background:#b9c0cc"></div>
+    </div>
+    <div class="blegend"><span style="color:#f5494d">涨 5274 (80.4%)</span>
+      <span style="color:#00b070">跌 1288 (19.6%)</span>
+      <span style="color:#9aa3b5">平 0</span></div>
       <div style="margin-top:14px">
     <div class="barrow">
       <span class="bl">上证指数 3982.65</span>
@@ -132,7 +143,7 @@ footer ul{margin:6px 0 6px 18px}
 <section>
   <h3>⑤ 板块强弱</h3>
   <div class="cards4">
-    <div class="card"><h4>行业涨幅榜</h4><div class="srow"><span>航空机场</span><span style="color:#f5494d">0.17%</span></div><div class="srow"><span>铁路公路</span><span style="color:#f5494d">0.34%</span></div><div class="srow"><span>物流</span><span style="color:#f5494d">1.44%</span></div><div class="srow"><span>水泥</span><span style="color:#f5494d">1.51%</span></div><div class="srow"><span>公用事业</span><span style="color:#f5494d">0.46%</span></div></div>
+    <div class="card"><h4>行业涨幅榜</h4><div class="na">数据源暂不可达 · 数据待东财板块接口</div></div>
     <div class="card"><h4>概念涨幅榜</h4><div class="na">数据源暂不可达 · 数据待东财板块接口</div></div>
     <div class="card"><h4>主力资金流入 Top5</h4><div class="na">数据源暂不可达 · 数据待东财板块接口</div></div>
     <div class="card"><h4>跌幅居前</h4><div class="na">数据源暂不可达 · 数据待东财板块接口</div></div></div>
@@ -158,7 +169,7 @@ footer ul{margin:6px 0 6px 18px}
 <section>
   <h3>⑦ 主线研判</h3>
   <div class="cards4">
-    <div class="card wide"><h4>相对强（主线）</h4><div class="mtext"><b>航空机场</b> 领涨（+0.17%，主力净流入 17659953.0亿）</div></div>
+    <div class="card wide"><h4>相对强（主线）</h4><div class="mtext"><div class="na">数据源暂不可达 · 行业涨幅待数据</div></div></div>
     <div class="card wide"><h4>退潮确认</h4><div class="mtext">暂无明确退潮信号；连板高度 4，梯队尚完整。</div></div>
     <div class="card wide"><h4>高风险</h4><div class="mtext">炸板 12 只，追高日内回撤风险上升。</div></div>
     <div class="card wide"><h4>活口</h4><div class="mtext">活口聚焦 <b>4连板</b> 天洋新材、金 螳 螂、澳洋健康。</div></div></div>
@@ -169,7 +180,7 @@ footer ul{margin:6px 0 6px 18px}
   <div class="obs">
     · 情绪温度 <b>70°（高温）</b>，若次日回落至冰点区关注冰点反转；若冲高温区防一致后分化。<br>
     · 盯紧连板最高标 <b>4板</b> 报价与封单，断板即退潮信号。<br>
-    · 主线 <b>航空机场</b> 次日量能是否持续，缩量加速慎追。<br>
+    · 主线 <b>—</b> 次日量能是否持续，缩量加速慎追。<br>
     · 封板率 89.8% 为日内接力强度锚，低于 60% 降低仓位预期。
   </div>
 </section>
@@ -177,7 +188,7 @@ footer ul{margin:6px 0 6px 18px}
 <footer>
   <div>⑨ 数据口径与免责：腾讯 qt.gtimg.cn（指数）· 东财 push2（板块/涨跌/跌停）· 东财涨停板专题(akshare: 涨停池/炸板池/昨日池) 真实计算连板高度·封板率·晋级率 · 新浪（涨停家数兜底）· 推送：企业微信机器人 webhook / WxPusher（配置其一即发，未配跳过）。</div>
   <div>各源状态：</div>
-  <ul><li>indices: ✓</li><li>breadth_em: ✗ unreachable:HTTP Error 502: Bad Gateway</li><li>limit_up_sina: ✓</li><li>sectors: ✓</li><li>concepts: ✗ unreachable:HTTP Error 502: Bad Gateway</li><li>sectors_detail: ✗ unreachable:HTTP Error 502: Bad Gateway</li><li>board_akshare: ✓</li><li>limit_up: ✓</li><li>limit_down: ✗ unreachable:HTTP Error 502: Bad Gateway</li></ul>
+  <ul><li>indices: ✓</li><li>breadth_em: ✓</li><li>limit_up_sina: ✓</li><li>sectors: ✗ unreachable:HTTP Error 502: Bad Gateway</li><li>concepts: ✗ unreachable:HTTP Error 502: Bad Gateway</li><li>sectors_detail: ✗ unreachable:HTTP Error 502: Bad Gateway</li><li>board_akshare: ✓</li><li>limit_up: ✓</li><li>limit_down: ✗ unreachable:HTTP Error 502: Bad Gateway</li></ul>
   <div class="disclaimer">⚠️ 非投资建议：本页为市场情绪与数据的客观快照，不构成任何买卖建议。投资有风险，决策需独立判断、自负盈亏。</div>
 </footer>
 </div>
