@@ -15,14 +15,24 @@ HEADERS = {
     "Accept": "*/*",
 }
 
-def _get(url, enc="utf-8", timeout=15):
-    req = urllib.request.Request(url, headers=HEADERS)
+def _get(url, enc="utf-8", timeout=15, ref=None):
+    headers = dict(HEADERS)
+    if ref:
+        headers["Referer"] = ref
+    req = urllib.request.Request(url, headers=headers)
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read().decode(enc, errors="replace")
 
 def _em_json(url):
-    txt = _get(url)
-    return json.loads(txt)
+    """东财 JSON 接口；push2 被限频/封禁时自动回退到 push2delay 镜像节点（数据同源、字段一致）。"""
+    last = None
+    for host in ("push2.eastmoney.com", "push2delay.eastmoney.com"):
+        u = re.sub(r"push2(delay)?\.eastmoney\.com", host, url)
+        try:
+            return json.loads(_get(u))
+        except Exception as e:
+            last = e
+    raise last
 
 # ---------------- 指数（腾讯，稳定） ----------------
 def fetch_indices_tencent():
@@ -87,16 +97,6 @@ def _f(v):
     except (TypeError, ValueError):
         return 0.0
 
-# ---------------- 涨停/跌停/炸板/连板（东财 board，易限频） ----------------
-def fetch_board_em(tcode, pz=60):
-    url = ("https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=%d&po=1&np=1&fltt=2&invt=2"
-           "&fs=m:0+t:%s&fields=f12,f14,f3,f100" % (pz, tcode))
-    d = _em_json(url)
-    diff = d.get("data", {}).get("diff", [])
-    total = d.get("data", {}).get("total", len(diff))
-    return total, [{"code": x.get("f12"), "name": x.get("f14"),
-                    "pct": _f(x.get("f3")), "reason": x.get("f100") or ""} for x in diff]
-
 # ---------------- 新浪 涨停家数兜底（顶部页扫描，涨停必在涨幅最前） ----------------
 def fetch_limitup_sina(pages=7):
     """新浪 getHQNodeData 按涨幅降序，扫前若干页统计涨停家数（涨停恒居前，覆盖全）。"""
@@ -120,6 +120,32 @@ def fetch_limitup_sina(pages=7):
             break
         time.sleep(0.4)
     return lim
+
+# ---------------- 跌停列表（新浪，与 limit_up_sina 同源，避开东财 push2 的 502） ----------------
+def fetch_limitdown_sina(pages=7):
+    """新浪 getHQNodeData 按跌幅升序，扫前若干页统计跌停家数 + 列表（跌停恒居前）。"""
+    lim = 0
+    rows = []
+    for page in range(1, pages + 1):
+        try:
+            url = ("https://vip.stock.finance.sina.com.cn/quotes_service/api/json_v2.php/"
+                   "Market_Center.getHQNodeData?page=%d&num=80&sort=changepercent&asc=1&node=hs_a" % page)
+            txt = _get(url, ref="https://finance.sina.com.cn/")
+            rws = json.loads(txt)
+            if not rws:
+                break
+            for r in rws:
+                cp = float(r.get("changepercent", 0) or 0)
+                if cp <= -9.8:
+                    lim += 1
+                    rows.append({"code": r.get("code"), "name": r.get("name"),
+                                 "pct": cp, "reason": ""})
+                else:
+                    return lim, rows
+        except Exception:
+            break
+        time.sleep(0.4)
+    return lim, rows
 
 # ---------------- 主入口 ----------------
 def collect(demo=False):
@@ -208,9 +234,9 @@ def collect(demo=False):
             res["status"]["limit_up"] = "sina_fallback"
     if board.get("broken") is not None:
         res["breadth"]["broken"] = board["broken"]
-    # 跌停：东财 push2（独立，不通不阻断）
+    # 跌停：新浪（与 limit_up_sina 同源，避开东财 push2 的 502）
     try:
-        total_ld, ld = fetch_board_em("82")
+        total_ld, ld = fetch_limitdown_sina()
         res["limit_down_list"] = ld
         res["breadth"]["limit_down"] = total_ld
         res["status"]["limit_down"] = "ok"
