@@ -8,6 +8,7 @@ site_dir = os.path.join(repo_root, "outputs", "review")
 site_dir = os.environ.get("SITE_DIR", site_dir)
 
 html_files = sorted(glob.glob(os.path.join(site_dir, "market-review-*.html")), reverse=True)
+latest_file = html_files[0] if html_files else ""
 
 items = []
 for f in html_files:
@@ -32,9 +33,13 @@ ul{{list-style:none;padding:0}}
 li{{padding:12px 0;border-bottom:1px solid #e9ebef}}
 a{{color:#3742fa;text-decoration:none;font-size:16px}}
 a:hover{{text-decoration:underline}}
+.latest{{display:block;background:#111827;color:#fff;border-radius:14px;padding:16px;margin:18px 0;text-decoration:none}}
+.latest strong{{display:block;font-size:18px;margin-bottom:4px}}
+.latest span{{color:#cbd5e1;font-size:13px}}
 .empty{{color:#8a909c;font-size:14px}}
 </style></head><body>
 <h1>A股收盘复盘 · 历史归档</h1>
+{f'<a class="latest" href="latest.html"><strong>打开最新复盘</strong><span>手机桌面固定收藏这个入口即可</span></a>' if latest_file else ''}
 <ul>{"".join(items) if items else '<li class="empty">暂无复盘记录</li>'}</ul>
 </body></html>"""
 

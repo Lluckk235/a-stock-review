@@ -54,6 +54,11 @@ def fmt(v, suffix=""):
         return "—"
     return f"{v}{suffix}"
 
+def fmt_money_yi(v):
+    if v is None:
+        return "—"
+    return f"{v:+.2f}亿"
+
 def na_note(msg):
     return f'<div class="na">数据源暂不可达 · {msg}</div>'
 
@@ -149,12 +154,37 @@ def sector_cards(d):
     {card("主力资金流入 Top5", inf, "inflow", "亿")}
     {card("跌幅居前", sd, "pct", "%")}'''
 
+def pick_mainline(d):
+    """主线必须同时看涨幅和资金，弱涨幅不强行贴标签。"""
+    candidates = []
+    for sector in d.get("sectors_up", []):
+        pct = sector.get("pct") or 0
+        inflow = sector.get("inflow") or 0
+        if pct <= 0:
+            continue
+        is_confirmed = (pct >= 1.5 and inflow >= 5) or inflow >= 20
+        if not is_confirmed:
+            continue
+        score = pct * 10 + max(inflow, 0) * 0.35
+        candidates.append((score, sector))
+    if not candidates:
+        return None
+    return sorted(candidates, key=lambda x: x[0], reverse=True)[0][1]
+
+def mainline_label(d):
+    line = pick_mainline(d)
+    return line["name"] if line else "主线不明确"
+
 def mainline_cards(d):
-    su = d.get("sectors_up", [])
+    rel = pick_mainline(d)
     bd = d.get("board", {})
     b = d.get("breadth", {})
-    rel = su[0] if su else None
-    rel_txt = f'<b>{rel["name"]}</b> 领涨（+{rel["pct"]}%，主力净流入 {rel.get("inflow")}亿）' if rel else na_note("行业涨幅待数据")
+    if rel:
+        rel_txt = f'<b>{rel["name"]}</b> 暂列相对强（涨幅 {rel["pct"]:+.2f}%，主力净流入 {fmt_money_yi(rel.get("inflow"))}）'
+    elif d.get("sectors_up"):
+        rel_txt = "主线不明确：行业涨幅与资金流没有形成明显共振，避免硬贴标签。"
+    else:
+        rel_txt = na_note("行业涨幅待数据")
     # 退潮判定
     ld = b.get("limit_down"); lu = b.get("limit_up"); seal = bd.get("seal_rate")
     if lu and ld is not None and ld > lu * 0.3:
@@ -191,6 +221,10 @@ def build_html(d):
 
     status = d.get("status", {})
     src_lines = "".join(f'<li>{k}: {"✓" if ("ok" in str(v)) else "✗ "+str(v)}</li>' for k, v in status.items())
+    mainline = mainline_label(d)
+    mainline_obs = (f'主线 <b>{mainline}</b> 次日量能是否持续，缩量加速慎追。'
+                    if pick_mainline(d)
+                    else '主线 <b>暂不明确</b>，明天重点看涨幅榜与资金流是否收敛到同一方向。')
 
     html = f'''<!DOCTYPE html>
 <html lang="zh-CN">
@@ -308,13 +342,13 @@ footer ul{{margin:6px 0 6px 18px}}
   <div class="obs">
     · 情绪温度 <b>{temp}°（{q}）</b>，若次日回落至冰点区关注冰点反转；若冲高温区防一致后分化。<br>
     · 盯紧连板最高标 <b>{fmt(bd.get('ladder')[0]['day'] if bd.get('ladder') else None)}板</b> 报价与封单，断板即退潮信号。<br>
-    · 主线 <b>{su[0]['name'] if su else '—'}</b> 次日量能是否持续，缩量加速慎追。<br>
+    · {mainline_obs}<br>
     · 封板率 {fmt(bd.get('seal_rate'),'%')} 为日内接力强度锚，低于 60% 降低仓位预期。
   </div>
 </section>
 
 <footer>
-  <div>⑨ 数据口径与免责：{ '腾讯 qt.gtimg.cn（指数）· 东财 push2（板块/涨跌/跌停）· 东财涨停板专题(akshare: 涨停池/炸板池/昨日池) 真实计算连板高度·封板率·晋级率 · 新浪（涨停家数兜底）· 推送：企业微信机器人 webhook / WxPusher（配置其一即发，未配跳过）。' }</div>
+  <div>⑨ 数据口径与免责：{ '腾讯 qt.gtimg.cn（指数）· 东财 push2（板块/涨跌/跌停）· 东财涨停板专题(akshare: 涨停池/炸板池/昨日池) 真实计算连板高度·封板率·晋级率 · 新浪（涨停家数兜底）· 推送：Bark / 企业微信机器人 webhook / WxPusher（配置其一即发，未配跳过）。' }</div>
   <div>各源状态：</div>
   <ul>{src_lines}</ul>
   <div class="disclaimer">⚠️ 非投资建议：本页为市场情绪与数据的客观快照，不构成任何买卖建议。投资有风险，决策需独立判断、自负盈亏。</div>
@@ -372,11 +406,11 @@ def load_env_file():
 def push_bark(key, d, temp, q):
     """Bark iOS 推送。只需设备 key(从 Bark App 复制)；可选 BARK_SERVER 自建服务。"""
     b = d.get("breadth", {}); bd = d.get("board", {})
-    main = d.get("sectors_up", [{}])[0].get("name", "—") if d.get("sectors_up") else "—"
+    main = mainline_label(d)
     date_slug = d['date'].replace('-', '')
     # 在线链接（GitHub Pages 部署后手机可点开看完整版）
     pages_base = os.environ.get("PAGES_BASE_URL", "").rstrip("/")
-    online_url = f"{pages_base}/market-review-{date_slug}.html" if pages_base else ""
+    online_url = f"{pages_base}/latest.html" if pages_base else ""
     local_path = f"{OUTDIR}/market-review-{date_slug}.html"
     link_line = f"在线：{online_url}\n" if online_url else f"文件：{local_path}\n"
     body = (f"情绪 {temp}° {q}\n"
@@ -406,7 +440,7 @@ def push_wxpusher(d, temp, q):
     if not (tok and uids):
         return "skip(未配置凭证)"
     b = d.get("breadth", {}); bd = d.get("board", {})
-    main = d.get("sectors_up", [{}])[0].get("name", "—") if d.get("sectors_up") else "—"
+    main = mainline_label(d)
     content = (f"A股收盘复盘 {d['date']}\n"
                f"情绪 {temp}° {q}\n"
                f"涨停 {b.get('limit_up')} 家 · 封板率 {bd.get('seal_rate')}%\n"
@@ -430,7 +464,7 @@ def push_wxpusher(d, temp, q):
 def push_wecom(webhook, d, temp, q):
     """企业微信群机器人 webhook 推送（markdown 卡片）。只需一个 webhook URL。"""
     b = d.get("breadth", {}); bd = d.get("board", {})
-    main = d.get("sectors_up", [{}])[0].get("name", "—") if d.get("sectors_up") else "—"
+    main = mainline_label(d)
     content = (f"## A股收盘复盘 {d['date']}\n"
                f"> 情绪温度 **{temp}° {q}**\n"
                f"> 涨停 {b.get('limit_up')} 家 · 封板率 {bd.get('seal_rate')}% · "
@@ -481,6 +515,8 @@ def main():
     os.makedirs(OUTDIR, exist_ok=True)
     with open(out, "w", encoding="utf-8") as f:
         f.write(html)
+    latest = f"{OUTDIR}/latest.html"
+    shutil.copyfile(out, latest)
     issues = validate(html, out)
     if issues:
         print("VALIDATION ISSUES:")
@@ -490,7 +526,8 @@ def main():
         print("VALIDATION: OK (零外链/标签平衡/JS通过)")
     push = push_notify(d, temp, q)
     print(f"WROTE {out}")
-    print(f"情绪温度={temp}° 定性={q} 主线={d.get('sectors_up',[{}])[0].get('name','—') if d.get('sectors_up') else '—'} 推送={push}")
+    print(f"WROTE {latest}")
+    print(f"情绪温度={temp}° 定性={q} 主线={mainline_label(d)} 推送={push}")
 
 if __name__ == "__main__":
     main()

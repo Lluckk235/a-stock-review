@@ -15,6 +15,8 @@ HEADERS = {
     "Accept": "*/*",
 }
 
+CNY_TO_YI = 100000000
+
 def _get(url, enc="utf-8", timeout=15, ref=None):
     headers = dict(HEADERS)
     if ref:
@@ -84,12 +86,19 @@ def fetch_breadth_em():
 
 # ---------------- 板块（东财 clist m:90） ----------------
 def fetch_sectors_em(ftype, pz=5):
-    url = ("https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=%d&po=1&np=1&fltt=2&invt=2"
+    url = ("https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=%d&po=1&np=1&fltt=2&invt=2&fid=f3"
            "&fs=m:90+t:%s&fields=f12,f14,f3,f62" % (pz, ftype))
     d = _em_json(url)
     diff = d.get("data", {}).get("diff", [])
-    return [{"code": x.get("f12"), "name": x.get("f14"),
-             "pct": _f(x.get("f3")), "inflow": _f(x.get("f62"))} for x in diff]
+    return [_sector_row(x) for x in diff]
+
+def _sector_row(x):
+    return {"code": x.get("f12"), "name": x.get("f14"),
+            "pct": _f(x.get("f3")), "inflow": _yuan_to_yi(x.get("f62"))}
+
+def _yuan_to_yi(v):
+    """东财 f62 是元，页面统一展示为亿元。"""
+    return round(_f(v) / CNY_TO_YI, 2)
 
 def _f(v):
     try:
@@ -191,7 +200,6 @@ def collect(demo=False):
     # 3) 板块
     try:
         res["sectors_up"] = fetch_sectors_em("2")
-        res["sectors_down"] = fetch_sectors_em("2") and []  # 占位，下面用排序
         res["status"]["sectors"] = "ok"
     except Exception as e:
         res["status"]["sectors"] = "unreachable:%s" % e
@@ -203,14 +211,12 @@ def collect(demo=False):
     # 行业涨幅榜（降序）& 跌幅榜（升序）& 资金流入（按 f62 降序）
     try:
         up = fetch_sectors_em("2")
-        dn_url = ("https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=5&po=0&np=1&fltt=2&invt=2"
+        dn_url = ("https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=5&po=0&np=1&fltt=2&invt=2&fid=f3"
                   "&fs=m:90+t:2&fields=f12,f14,f3,f62")
-        d = _em_json(dn_url); res["sectors_down"] = [{"code": x.get("f12"), "name": x.get("f14"),
-                                                      "pct": _f(x.get("f3")), "inflow": _f(x.get("f62"))}
-                                                     for x in d.get("data", {}).get("diff", [])]
-        inf_url = ("https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=5&po=1&np=1&fltt=2&invt=2"
+        d = _em_json(dn_url); res["sectors_down"] = [_sector_row(x) for x in d.get("data", {}).get("diff", [])]
+        inf_url = ("https://push2.eastmoney.com/api/qt/clist/get?pn=1&pz=5&po=1&np=1&fltt=2&invt=2&fid=f62"
                    "&fs=m:90+t:2&fields=f12,f14,f3,f62&ord=f62")
-        d2 = _em_json(inf_url); res["inflow_top5"] = [{"name": x.get("f14"), "inflow": _f(x.get("f62"))}
+        d2 = _em_json(inf_url); res["inflow_top5"] = [{"name": x.get("f14"), "inflow": _yuan_to_yi(x.get("f62"))}
                                                       for x in d2.get("data", {}).get("diff", [])]
     except Exception as e:
         res["status"]["sectors_detail"] = "unreachable:%s" % e
