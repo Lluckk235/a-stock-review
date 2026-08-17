@@ -30,9 +30,9 @@ jobs:
           PAGES_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
 
       - name: Generate index page
-        run: |
-          cd outputs/review
-          python ../../scripts/generate_index.py
+        run: python scripts/generate_index.py
+        env:
+          SITE_DIR: outputs/review
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
