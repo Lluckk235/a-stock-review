@@ -1,0 +1,10 @@
+# 推送凭证（勿提交真实 key）
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# 输出（由 Actions 运行时生成）
+outputs/
