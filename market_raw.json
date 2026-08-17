@@ -1,0 +1,135 @@
+{
+  "date": "2026-08-17",
+  "weekday": "Monday",
+  "gate": {
+    "pass": true,
+    "reason": ""
+  },
+  "indices": [
+    {
+      "code": "sh000001",
+      "name": "上证指数",
+      "price": 3982.65,
+      "pct": 1.41
+    },
+    {
+      "code": "sz399006",
+      "name": "创业板指",
+      "price": 3740.16,
+      "pct": 3.14
+    },
+    {
+      "code": "sh000688",
+      "name": "科创50",
+      "price": 1788.85,
+      "pct": 4.14
+    }
+  ],
+  "breadth": {
+    "limit_up_sina": 0,
+    "limit_up": 106,
+    "limit_up_source": "东财涨停池",
+    "broken": 12
+  },
+  "sectors_up": [
+    {
+      "code": "BK0420",
+      "name": "航空机场",
+      "pct": 0.17,
+      "inflow": 17659953.0
+    },
+    {
+      "code": "BK0421",
+      "name": "铁路公路",
+      "pct": 0.34,
+      "inflow": 7848597.0
+    },
+    {
+      "code": "BK0422",
+      "name": "物流",
+      "pct": 1.44,
+      "inflow": 141191616.0
+    },
+    {
+      "code": "BK0424",
+      "name": "水泥",
+      "pct": 1.51,
+      "inflow": 61435673.0
+    },
+    {
+      "code": "BK0427",
+      "name": "公用事业",
+      "pct": 0.46,
+      "inflow": -482287520.0
+    }
+  ],
+  "sectors_down": [],
+  "concepts_up": [],
+  "inflow_top5": [],
+  "limit_up_list": [],
+  "limit_down_list": [],
+  "broken_list": [],
+  "board": {
+    "height": 4,
+    "seal_rate": 89.8,
+    "promote_rate": 19.2,
+    "ladder": [
+      {
+        "day": 4,
+        "count": 3,
+        "names": [
+          "天洋新材",
+          "金 螳 螂",
+          "澳洋健康"
+        ]
+      },
+      {
+        "day": 3,
+        "count": 2,
+        "names": [
+          "共进股份",
+          "神奇制药"
+        ]
+      },
+      {
+        "day": 2,
+        "count": 10,
+        "names": [
+          "桂发祥",
+          "中石科技",
+          "华正新材",
+          "圣达生物",
+          "正裕工业",
+          "旭光电子"
+        ]
+      },
+      {
+        "day": 1,
+        "count": 91,
+        "names": [
+          "金健米业",
+          "今飞凯达",
+          "深深房Ａ",
+          "百合股份",
+          "哈森股份",
+          "亚翔集成"
+        ]
+      }
+    ],
+    "source": "东财涨停板专题(akshare)",
+    "limit_up_sealed": 106,
+    "broken": 12,
+    "promote_detail": "1进2: 今日2板10只 / 昨日首板52只"
+  },
+  "status": {
+    "indices": "ok",
+    "breadth_em": "unreachable:HTTP Error 502: Bad Gateway",
+    "limit_up_sina": "ok",
+    "sectors": "ok",
+    "concepts": "unreachable:HTTP Error 502: Bad Gateway",
+    "sectors_detail": "unreachable:HTTP Error 502: Bad Gateway",
+    "board_akshare": "ok",
+    "limit_up": "ok",
+    "limit_down": "unreachable:HTTP Error 502: Bad Gateway"
+  }
+}
