@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-17",
-  "weekday": "Monday",
+  "date": "2026-08-18",
+  "weekday": "Tuesday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,216 +9,276 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3982.65,
-      "pct": 1.41
+      "price": 3990.3,
+      "pct": 0.19
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 3740.16,
-      "pct": 3.14
+      "price": 3705.56,
+      "pct": -0.93
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1788.85,
-      "pct": 4.14
+      "price": 1790.87,
+      "pct": 0.11
     }
   ],
   "breadth": {
-    "up": 5274,
-    "down": 1288,
-    "limit_up_sina": 156,
-    "limit_up": 106,
+    "up": 2303,
+    "down": 4282,
+    "limit_up_sina": 111,
+    "limit_up": 79,
     "limit_up_source": "东财涨停池",
-    "broken": 12,
-    "limit_down": 2
+    "broken": 23,
+    "limit_down": 12
   },
   "sectors_up": [
     {
-      "code": "BK1510",
-      "name": "其他养殖",
-      "pct": 10.69,
-      "inflow": 0.52
-    },
-    {
       "code": "BK1518",
       "name": "种子",
-      "pct": 6.62,
-      "inflow": 4.67
+      "pct": 14.55,
+      "inflow": 9.24
     },
     {
-      "code": "BK1328",
-      "name": "集成电路封测",
-      "pct": 5.76,
-      "inflow": 46.09
+      "code": "BK1261",
+      "name": "种植业",
+      "pct": 11.83,
+      "inflow": 16.15
     },
     {
-      "code": "BK1329",
-      "name": "集成电路制造",
-      "pct": 5.49,
-      "inflow": -2.71
+      "code": "BK1517",
+      "name": "食用菌",
+      "pct": 11.57,
+      "inflow": 1.57
     },
     {
-      "code": "BK1325",
-      "name": "半导体材料",
-      "pct": 5.47,
-      "inflow": 29.56
+      "code": "BK1510",
+      "name": "其他养殖",
+      "pct": 10.17,
+      "inflow": 0.4
+    },
+    {
+      "code": "BK1515",
+      "name": "粮食种植",
+      "pct": 9.97,
+      "inflow": 2.07
     }
   ],
   "sectors_down": [
     {
-      "code": "BK1300",
-      "name": "院线",
-      "pct": -2.55,
-      "inflow": -3.07
+      "code": "BK1565",
+      "name": "会展服务",
+      "pct": -4.04,
+      "inflow": -0.29
     },
     {
-      "code": "BK1277",
-      "name": "白酒Ⅱ",
-      "pct": -2.13,
-      "inflow": -18.15
+      "code": "BK1412",
+      "name": "氨纶",
+      "pct": -3.53,
+      "inflow": -0.35
     },
     {
-      "code": "BK1575",
-      "name": "白酒Ⅲ",
-      "pct": -2.13,
-      "inflow": -18.15
+      "code": "BK1298",
+      "name": "文字媒体",
+      "pct": -2.95,
+      "inflow": -1.14
     },
     {
-      "code": "BK1499",
-      "name": "医美服务",
-      "pct": -1.76,
-      "inflow": -0.05
+      "code": "BK1416",
+      "name": "粘胶",
+      "pct": -2.86,
+      "inflow": -0.39
     },
     {
-      "code": "BK1347",
-      "name": "纺织鞋类制造",
-      "pct": -1.31,
-      "inflow": 0.01
+      "code": "BK1622",
+      "name": "镍",
+      "pct": -2.76,
+      "inflow": -3.12
     }
   ],
   "concepts_up": [
     {
-      "code": "BK1645",
-      "name": "昨日打二板以上表现",
-      "pct": 5.98,
-      "inflow": 3.46
+      "code": "BK0907",
+      "name": "转基因",
+      "pct": 8.27,
+      "inflow": 9.12
     },
     {
-      "code": "BK1152",
-      "name": "高带宽内存",
-      "pct": 5.73,
-      "inflow": 37.77
+      "code": "BK1086",
+      "name": "粮食概念",
+      "pct": 7.45,
+      "inflow": 16.25
     },
     {
-      "code": "BK1051",
-      "name": "昨日连板_含一字",
-      "pct": 5.68,
-      "inflow": -1.68
+      "code": "BK0888",
+      "name": "农业种植",
+      "pct": 4.81,
+      "inflow": 26.32
     },
     {
-      "code": "BK1175",
-      "name": "玻璃基板",
-      "pct": 5.15,
-      "inflow": 83.56
+      "code": "BK1675",
+      "name": "历史新高",
+      "pct": 3.97,
+      "inflow": -12.25
     },
     {
-      "code": "BK1023",
-      "name": "培育钻石",
-      "pct": 5.06,
-      "inflow": 8.32
+      "code": "BK0967",
+      "name": "水产概念",
+      "pct": 3.69,
+      "inflow": 6.0
     }
   ],
   "inflow_top5": [
     {
-      "name": "电子",
-      "inflow": 309.46
+      "name": "农林牧渔",
+      "inflow": 36.34
     },
     {
-      "name": "半导体",
-      "inflow": 195.48
+      "name": "光学光电子",
+      "inflow": 19.58
     },
     {
-      "name": "数字芯片设计",
-      "inflow": 101.93
+      "name": "种植业",
+      "inflow": 16.15
     },
     {
-      "name": "通信网络设备及器件",
-      "inflow": 63.82
+      "name": "面板",
+      "inflow": 15.96
     },
     {
-      "name": "通信设备",
-      "inflow": 59.63
+      "name": "化学原料",
+      "inflow": 11.93
     }
   ],
   "limit_up_list": [],
   "limit_down_list": [
     {
-      "code": "300682",
-      "name": "朗新科技",
-      "pct": -10.995,
+      "code": "300558",
+      "name": "贝达药业",
+      "pct": -20.0,
       "reason": ""
     },
     {
-      "code": "000802",
-      "name": "北京文化",
-      "pct": -9.966,
+      "code": "920107",
+      "name": "恒兴股份",
+      "pct": -19.9,
+      "reason": ""
+    },
+    {
+      "code": "301520",
+      "name": "万邦医药",
+      "pct": -13.167,
+      "reason": ""
+    },
+    {
+      "code": "301047",
+      "name": "义翘神州",
+      "pct": -13.033,
+      "reason": ""
+    },
+    {
+      "code": "688137",
+      "name": "近岸蛋白",
+      "pct": -12.334,
+      "reason": ""
+    },
+    {
+      "code": "301459",
+      "name": "丰茂股份",
+      "pct": -12.048,
+      "reason": ""
+    },
+    {
+      "code": "002951",
+      "name": "金时科技",
+      "pct": -10.021,
+      "reason": ""
+    },
+    {
+      "code": "002172",
+      "name": "澳洋健康",
+      "pct": -10.02,
+      "reason": ""
+    },
+    {
+      "code": "603887",
+      "name": "城地香江",
+      "pct": -10.017,
+      "reason": ""
+    },
+    {
+      "code": "001260",
+      "name": "坤泰股份",
+      "pct": -10.0,
+      "reason": ""
+    },
+    {
+      "code": "603281",
+      "name": "江瀚新材",
+      "pct": -9.995,
+      "reason": ""
+    },
+    {
+      "code": "002724",
+      "name": "海洋王",
+      "pct": -9.889,
       "reason": ""
     }
   ],
   "broken_list": [],
   "board": {
     "height": 4,
-    "seal_rate": 89.8,
-    "promote_rate": 19.2,
+    "seal_rate": 77.5,
+    "promote_rate": 14.1,
     "ladder": [
       {
         "day": 4,
-        "count": 3,
+        "count": 1,
         "names": [
-          "天洋新材",
-          "金 螳 螂",
-          "澳洋健康"
-        ]
-      },
-      {
-        "day": 3,
-        "count": 2,
-        "names": [
-          "共进股份",
           "神奇制药"
         ]
       },
       {
-        "day": 2,
-        "count": 10,
+        "day": 3,
+        "count": 4,
         "names": [
           "桂发祥",
-          "中石科技",
-          "华正新材",
-          "圣达生物",
           "正裕工业",
-          "旭光电子"
+          "旭光电子",
+          "中石科技"
+        ]
+      },
+      {
+        "day": 2,
+        "count": 13,
+        "names": [
+          "哈森股份",
+          "红四方",
+          "金健米业",
+          "博敏电子",
+          "魅视科技",
+          "天山生物"
         ]
       },
       {
         "day": 1,
-        "count": 91,
+        "count": 61,
         "names": [
-          "金健米业",
-          "今飞凯达",
-          "深深房Ａ",
-          "百合股份",
-          "哈森股份",
-          "亚翔集成"
+          "丰原药业",
+          "学大教育",
+          "盈新发展",
+          "日丰股份",
+          "金字火腿",
+          "亚太股份"
         ]
       }
     ],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 106,
-    "broken": 12,
-    "promote_detail": "1进2: 今日2板10只 / 昨日首板52只"
+    "limit_up_sealed": 79,
+    "broken": 23,
+    "promote_detail": "1进2: 今日2板13只 / 昨日首板92只"
   },
   "status": {
     "indices": "ok",
