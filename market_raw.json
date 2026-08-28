@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-27",
-  "weekday": "Thursday",
+  "date": "2026-08-28",
+  "weekday": "Friday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,190 +9,250 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3956.57,
-      "pct": 1.13
+      "price": 3952.18,
+      "pct": -0.11
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 3473.35,
-      "pct": 1.71
+      "price": 3424.4,
+      "pct": -1.41
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1693.48,
-      "pct": 3.77
+      "price": 1662.15,
+      "pct": -1.85
     }
   ],
   "breadth": {
-    "up": 4231,
-    "down": 2255,
-    "limit_up_sina": 129,
-    "limit_up": 77,
+    "up": 3440,
+    "down": 3107,
+    "limit_up_sina": 95,
+    "limit_up": 82,
     "limit_up_source": "东财涨停池",
-    "broken": 17,
-    "limit_down": 5
+    "broken": 16,
+    "limit_down": 15
   },
   "sectors_up": [
     {
-      "code": "BK1556",
-      "name": "教育运营及其他",
-      "pct": 7.64,
-      "inflow": 0.53
+      "code": "BK1432",
+      "name": "氮肥",
+      "pct": 7.33,
+      "inflow": 3.04
     },
     {
-      "code": "BK1329",
-      "name": "集成电路制造",
-      "pct": 6.81,
-      "inflow": 10.67
+      "code": "BK1341",
+      "name": "房产租赁经纪",
+      "pct": 5.44,
+      "inflow": 2.32
     },
     {
-      "code": "BK1516",
-      "name": "其他种植业",
-      "pct": 6.74,
-      "inflow": 1.44
+      "code": "BK1355",
+      "name": "运动服装",
+      "pct": 5.12,
+      "inflow": 1.68
     },
     {
       "code": "BK1518",
       "name": "种子",
-      "pct": 6.3,
-      "inflow": 3.11
+      "pct": 4.53,
+      "inflow": 1.84
     },
     {
-      "code": "BK1330",
-      "name": "模拟芯片设计",
-      "pct": 5.77,
-      "inflow": 7.34
+      "code": "BK1404",
+      "name": "农用机械",
+      "pct": 4.34,
+      "inflow": 0.56
     }
   ],
   "sectors_down": [
     {
-      "code": "BK1320",
-      "name": "逆变器",
-      "pct": -2.12,
-      "inflow": -12.23
+      "code": "BK1598",
+      "name": "疫苗",
+      "pct": -3.94,
+      "inflow": -4.73
     },
     {
-      "code": "BK1606",
-      "name": "线下药店",
-      "pct": -2.01,
-      "inflow": -0.14
+      "code": "BK1600",
+      "name": "医疗研发外包",
+      "pct": -3.64,
+      "inflow": -10.06
     },
     {
-      "code": "BK1290",
-      "name": "教育出版",
-      "pct": -1.8,
-      "inflow": -0.05
+      "code": "BK1592",
+      "name": "通信线缆及配套",
+      "pct": -3.38,
+      "inflow": -51.15
     },
     {
-      "code": "BK1369",
-      "name": "长材",
-      "pct": -1.61,
-      "inflow": -0.03
+      "code": "BK1314",
+      "name": "风电整机",
+      "pct": -3.04,
+      "inflow": -3.75
     },
     {
-      "code": "BK1347",
-      "name": "纺织鞋类制造",
-      "pct": -1.55,
-      "inflow": 0.02
+      "code": "BK1602",
+      "name": "诊断服务",
+      "pct": -2.96,
+      "inflow": -0.22
     }
   ],
   "concepts_up": [
     {
+      "code": "BK1675",
+      "name": "历史新高",
+      "pct": 10.02,
+      "inflow": -0.43
+    },
+    {
       "code": "BK1645",
       "name": "昨日打二板以上表现",
-      "pct": 6.97,
-      "inflow": 1.53
-    },
-    {
-      "code": "BK1152",
-      "name": "高带宽内存",
-      "pct": 6.08,
-      "inflow": 42.06
-    },
-    {
-      "code": "BK1128",
-      "name": "CPO概念",
-      "pct": 4.95,
-      "inflow": 154.27
+      "pct": 6.18,
+      "inflow": -7.94
     },
     {
       "code": "BK1051",
       "name": "昨日连板_含一字",
-      "pct": 4.87,
-      "inflow": 3.64
+      "pct": 5.06,
+      "inflow": -9.95
     },
     {
-      "code": "BK1137",
-      "name": "存储芯片",
-      "pct": 4.84,
-      "inflow": 197.41
+      "code": "BK1109",
+      "name": "供销社概念",
+      "pct": 3.3,
+      "inflow": 1.54
+    },
+    {
+      "code": "BK1050",
+      "name": "昨日涨停_含一字",
+      "pct": 3.08,
+      "inflow": -29.43
     }
   ],
   "inflow_top5": [
     {
-      "name": "电子",
-      "inflow": 389.58
+      "name": "基础化工",
+      "inflow": 26.78
     },
     {
-      "name": "半导体",
-      "inflow": 173.73
+      "name": "横向通用软件",
+      "inflow": 21.68
     },
     {
-      "name": "元件",
-      "inflow": 125.2
+      "name": "软件开发",
+      "inflow": 20.99
     },
     {
-      "name": "印制电路板",
-      "inflow": 105.5
+      "name": "化学制品",
+      "inflow": 17.16
     },
     {
-      "name": "通信",
-      "inflow": 101.8
+      "name": "计算机",
+      "inflow": 13.66
     }
   ],
   "limit_up_list": [],
   "limit_down_list": [
     {
-      "code": "300274",
-      "name": "阳光电源",
-      "pct": -12.236,
+      "code": "301520",
+      "name": "万邦医药",
+      "pct": -17.554,
       "reason": ""
     },
     {
-      "code": "002028",
-      "name": "思源电气",
-      "pct": -10.001,
+      "code": "688356",
+      "name": "键凯科技",
+      "pct": -14.533,
       "reason": ""
     },
     {
-      "code": "603839",
-      "name": "安正时尚",
-      "pct": -9.986,
+      "code": "688351",
+      "name": "微电生理",
+      "pct": -13.091,
       "reason": ""
     },
     {
-      "code": "003013",
-      "name": "地铁设计",
-      "pct": -9.972,
+      "code": "300534",
+      "name": "陇神戎发",
+      "pct": -13.006,
       "reason": ""
     },
     {
-      "code": "920717",
-      "name": "瑞星股份",
-      "pct": -9.847,
+      "code": "300772",
+      "name": "运达股份",
+      "pct": -11.903,
+      "reason": ""
+    },
+    {
+      "code": "301468",
+      "name": "博盈特焊",
+      "pct": -11.407,
+      "reason": ""
+    },
+    {
+      "code": "688826",
+      "name": "频准激光",
+      "pct": -11.348,
+      "reason": ""
+    },
+    {
+      "code": "688137",
+      "name": "近岸蛋白",
+      "pct": -11.289,
+      "reason": ""
+    },
+    {
+      "code": "688185",
+      "name": "康希诺",
+      "pct": -10.681,
+      "reason": ""
+    },
+    {
+      "code": "688503",
+      "name": "聚和材料",
+      "pct": -10.517,
+      "reason": ""
+    },
+    {
+      "code": "688835",
+      "name": "C高凯",
+      "pct": -10.33,
+      "reason": ""
+    },
+    {
+      "code": "300469",
+      "name": "信息发展",
+      "pct": -10.311,
+      "reason": ""
+    },
+    {
+      "code": "002963",
+      "name": "豪尔赛",
+      "pct": -10.009,
+      "reason": ""
+    },
+    {
+      "code": "603319",
+      "name": "美湖股份",
+      "pct": -9.983,
+      "reason": ""
+    },
+    {
+      "code": "603725",
+      "name": "天安新材",
+      "pct": -9.925,
       "reason": ""
     }
   ],
   "broken_list": [],
   "board": {
-    "height": 6,
-    "seal_rate": 81.9,
-    "promote_rate": 20.5,
+    "height": 7,
+    "seal_rate": 83.7,
+    "promote_rate": 16.4,
     "ladder": [
       {
-        "day": 6,
+        "day": 7,
         "count": 1,
         "names": [
           "深中华A"
@@ -202,56 +262,56 @@
         "day": 5,
         "count": 1,
         "names": [
-          "楚天龙"
-        ]
-      },
-      {
-        "day": 4,
-        "count": 1,
-        "names": [
           "海鸥住工"
         ]
       },
       {
-        "day": 3,
-        "count": 5,
+        "day": 4,
+        "count": 3,
         "names": [
-          "冀衡医药",
           "捷荣技术",
           "万向德农",
-          "青山纸业",
-          "康盛股份"
+          "冀衡医药"
+        ]
+      },
+      {
+        "day": 3,
+        "count": 3,
+        "names": [
+          "锦龙股份",
+          "新农股份",
+          "千金药业"
         ]
       },
       {
         "day": 2,
-        "count": 8,
+        "count": 10,
         "names": [
-          "锦龙股份",
-          "新农股份",
-          "法尔胜",
-          "千金药业",
-          "凯瑞德",
-          "杭电股份"
+          "沃特股份",
+          "昊华科技",
+          "新赛股份",
+          "中安科",
+          "莱绅通灵",
+          "海鸥股份"
         ]
       },
       {
         "day": 1,
-        "count": 61,
+        "count": 64,
         "names": [
-          "湖南黄金",
-          "新赛股份",
-          "神奇制药",
-          "五芳斋",
-          "甘化科工",
-          "大普微-UW"
+          "天娱数科",
+          "德尔未来",
+          "鼎捷数智",
+          "时代出版",
+          "久其软件",
+          "华锦股份"
         ]
       }
     ],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 77,
-    "broken": 17,
-    "promote_detail": "1进2: 今日2板8只 / 昨日首板39只"
+    "limit_up_sealed": 82,
+    "broken": 16,
+    "promote_detail": "1进2: 今日2板10只 / 昨日首板61只"
   },
   "status": {
     "indices": "ok",
