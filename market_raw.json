@@ -130,28 +130,7 @@
       "inflow": 60.32
     }
   ],
-  "inflow_top5": [
-    {
-      "name": "传媒",
-      "inflow": 58.67
-    },
-    {
-      "name": "计算机",
-      "inflow": 34.02
-    },
-    {
-      "name": "数字芯片设计",
-      "inflow": 31.37
-    },
-    {
-      "name": "电子",
-      "inflow": 29.53
-    },
-    {
-      "name": "机械设备",
-      "inflow": 25.84
-    }
-  ],
+  "inflow_top5": [],
   "limit_up_list": [],
   "limit_down_list": [
     {
@@ -349,6 +328,7 @@
     "limit_up_sina": "ok",
     "sectors": "ok",
     "concepts": "ok",
+    "sectors_detail": "unreachable:The read operation timed out",
     "board_akshare": "ok",
     "limit_up": "ok",
     "limit_down": "ok"
