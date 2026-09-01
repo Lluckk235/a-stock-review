@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-31",
-  "weekday": "Monday",
+  "date": "2026-09-01",
+  "weekday": "Tuesday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,339 +9,238 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3986.3,
-      "pct": 0.86
+      "price": 3979.89,
+      "pct": -0.16
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 3438.68,
-      "pct": 0.42
+      "price": 3393.43,
+      "pct": -1.32
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1684.39,
-      "pct": 1.34
+      "price": 1647.53,
+      "pct": -2.19
     }
   ],
   "breadth": {
-    "up": 4008,
-    "down": 2555,
-    "limit_up_sina": 126,
-    "limit_up": 88,
+    "up": 3877,
+    "down": 2710,
+    "limit_up_sina": 105,
+    "limit_up": 83,
     "limit_up_source": "东财涨停池",
-    "broken": 30,
-    "limit_down": 20
+    "broken": 6,
+    "limit_down": 3
   },
   "sectors_up": [
     {
       "code": "BK1296",
       "name": "视频媒体",
-      "pct": 20.0,
-      "inflow": 3.02
+      "pct": 20.02,
+      "inflow": 3.66
+    },
+    {
+      "code": "BK1518",
+      "name": "种子",
+      "pct": 12.87,
+      "inflow": 16.85
+    },
+    {
+      "code": "BK1261",
+      "name": "种植业",
+      "pct": 8.88,
+      "inflow": 18.18
+    },
+    {
+      "code": "BK1515",
+      "name": "粮食种植",
+      "pct": 7.42,
+      "inflow": 0.23
     },
     {
       "code": "BK1298",
       "name": "文字媒体",
-      "pct": 15.0,
-      "inflow": 13.06
-    },
-    {
-      "code": "BK1556",
-      "name": "教育运营及其他",
-      "pct": 10.94,
-      "inflow": 0.38
-    },
-    {
-      "code": "BK1299",
-      "name": "影视动漫制作",
-      "pct": 7.75,
-      "inflow": 12.52
-    },
-    {
-      "code": "BK1221",
-      "name": "数字媒体",
-      "pct": 6.78,
-      "inflow": 25.54
+      "pct": 6.89,
+      "inflow": -1.31
     }
   ],
   "sectors_down": [
     {
-      "code": "BK1616",
-      "name": "白银",
-      "pct": -5.19,
-      "inflow": -4.48
+      "code": "BK1625",
+      "name": "钨",
+      "pct": -4.81,
+      "inflow": -11.6
     },
     {
-      "code": "BK1357",
-      "name": "钟表珠宝",
-      "pct": -4.68,
-      "inflow": -2.43
+      "code": "BK1325",
+      "name": "半导体材料",
+      "pct": -4.19,
+      "inflow": -16.43
     },
     {
-      "code": "BK0734",
-      "name": "饰品",
-      "pct": -4.27,
-      "inflow": -2.45
+      "code": "BK1039",
+      "name": "电子化学品Ⅱ",
+      "pct": -3.9,
+      "inflow": -12.86
     },
     {
-      "code": "BK1510",
-      "name": "其他养殖",
-      "pct": -3.93,
-      "inflow": -0.55
+      "code": "BK1332",
+      "name": "电子化学品Ⅲ",
+      "pct": -3.9,
+      "inflow": -12.86
     },
     {
-      "code": "BK1320",
-      "name": "逆变器",
-      "pct": -3.67,
-      "inflow": -14.64
+      "code": "BK1469",
+      "name": "涂料",
+      "pct": -3.76,
+      "inflow": -0.09
     }
   ],
   "concepts_up": [
     {
-      "code": "BK1151",
-      "name": "短剧互动游戏",
-      "pct": 6.21,
-      "inflow": 37.89
+      "code": "BK0907",
+      "name": "转基因",
+      "pct": 7.79,
+      "inflow": 12.33
     },
     {
-      "code": "BK1172",
-      "name": "AI语料",
-      "pct": 5.99,
-      "inflow": 29.03
+      "code": "BK1086",
+      "name": "粮食概念",
+      "pct": 6.87,
+      "inflow": 25.95
     },
     {
-      "code": "BK0847",
-      "name": "影视概念",
-      "pct": 5.19,
-      "inflow": 37.96
+      "code": "BK1051",
+      "name": "昨日连板_含一字",
+      "pct": 5.65,
+      "inflow": -10.46
     },
     {
-      "code": "BK1675",
-      "name": "历史新高",
-      "pct": 4.79,
-      "inflow": 0.62
+      "code": "BK0816",
+      "name": "昨日连板",
+      "pct": 5.57,
+      "inflow": -7.79
     },
     {
-      "code": "BK1111",
-      "name": "AIGC概念",
-      "pct": 4.27,
-      "inflow": 60.32
+      "code": "BK0888",
+      "name": "农业种植",
+      "pct": 4.75,
+      "inflow": 24.52
     }
   ],
   "inflow_top5": [
     {
-      "name": "传媒",
-      "inflow": 58.67
+      "name": "农林牧渔",
+      "inflow": 28.76
     },
     {
-      "name": "计算机",
-      "inflow": 34.02
+      "name": "非银金融",
+      "inflow": 27.82
     },
     {
-      "name": "数字芯片设计",
-      "inflow": 31.37
+      "name": "医药生物",
+      "inflow": 20.19
     },
     {
-      "name": "电子",
-      "inflow": 29.53
+      "name": "种植业",
+      "inflow": 18.18
     },
     {
-      "name": "机械设备",
-      "inflow": 25.84
+      "name": "商贸零售",
+      "inflow": 17.25
     }
   ],
   "limit_up_list": [],
   "limit_down_list": [
     {
-      "code": "920288",
-      "name": "华大海天",
-      "pct": -29.674,
+      "code": "688020",
+      "name": "方邦股份",
+      "pct": -11.064,
       "reason": ""
     },
     {
-      "code": "688356",
-      "name": "键凯科技",
-      "pct": -16.36,
+      "code": "688308",
+      "name": "欧科亿",
+      "pct": -10.846,
       "reason": ""
     },
     {
-      "code": "300120",
-      "name": "经纬辉开",
-      "pct": -15.376,
-      "reason": ""
-    },
-    {
-      "code": "920023",
-      "name": "*ST田野",
-      "pct": -15.054,
-      "reason": ""
-    },
-    {
-      "code": "301520",
-      "name": "万邦医药",
-      "pct": -13.81,
-      "reason": ""
-    },
-    {
-      "code": "002437",
-      "name": "誉衡药业",
-      "pct": -10.082,
-      "reason": ""
-    },
-    {
-      "code": "000545",
-      "name": "金浦钛业",
-      "pct": -10.037,
-      "reason": ""
-    },
-    {
-      "code": "002785",
-      "name": "万里石",
-      "pct": -10.008,
-      "reason": ""
-    },
-    {
-      "code": "600272",
-      "name": "开开实业",
-      "pct": -10.005,
-      "reason": ""
-    },
-    {
-      "code": "600363",
-      "name": "联创光电",
-      "pct": -10.005,
-      "reason": ""
-    },
-    {
-      "code": "600613",
-      "name": "神奇制药",
+      "code": "300870",
+      "name": "欧陆通",
       "pct": -10.0,
-      "reason": ""
-    },
-    {
-      "code": "300642",
-      "name": "透景生命",
-      "pct": -9.979,
-      "reason": ""
-    },
-    {
-      "code": "002412",
-      "name": "汉森制药",
-      "pct": -9.977,
-      "reason": ""
-    },
-    {
-      "code": "600721",
-      "name": "百花医药",
-      "pct": -9.974,
-      "reason": ""
-    },
-    {
-      "code": "601212",
-      "name": "白银有色",
-      "pct": -9.961,
-      "reason": ""
-    },
-    {
-      "code": "000078",
-      "name": "ST海王",
-      "pct": -9.938,
-      "reason": ""
-    },
-    {
-      "code": "603900",
-      "name": "莱绅通灵",
-      "pct": -9.936,
-      "reason": ""
-    },
-    {
-      "code": "002742",
-      "name": "冀衡医药",
-      "pct": -9.936,
-      "reason": ""
-    },
-    {
-      "code": "301130",
-      "name": "西点药业",
-      "pct": -9.91,
-      "reason": ""
-    },
-    {
-      "code": "603838",
-      "name": "*ST四通",
-      "pct": -9.83,
       "reason": ""
     }
   ],
   "broken_list": [],
   "board": {
-    "height": 6,
-    "seal_rate": 74.6,
-    "promote_rate": 15.9,
+    "height": 7,
+    "seal_rate": 93.3,
+    "promote_rate": 12.9,
     "ladder": [
       {
-        "day": 6,
+        "day": 7,
         "count": 1,
         "names": [
           "海鸥住工"
         ]
       },
       {
-        "day": 5,
+        "day": 6,
         "count": 2,
         "names": [
-          "万向德农",
-          "捷荣技术"
+          "捷荣技术",
+          "万向德农"
         ]
       },
       {
         "day": 4,
         "count": 1,
         "names": [
-          "锦龙股份"
+          "新赛股份"
         ]
       },
       {
         "day": 3,
-        "count": 4,
+        "count": 5,
         "names": [
-          "新赛股份",
-          "沃特股份",
-          "海鸥股份",
-          "星网锐捷"
+          "福建金森",
+          "竞业达",
+          "时代出版",
+          "国芳集团",
+          "我爱我家"
         ]
       },
       {
         "day": 2,
-        "count": 10,
+        "count": 9,
         "names": [
-          "深物业A",
-          "我爱我家",
-          "福建金森",
-          "国芳集团",
-          "潞化科技",
-          "赤天化"
+          "欢瑞世纪",
+          "中广天择",
+          "大晟文化",
+          "芒果超媒",
+          "掌阅科技",
+          "龙版传媒"
         ]
       },
       {
         "day": 1,
-        "count": 70,
+        "count": 65,
         "names": [
-          "天保基建",
-          "广宇集团",
-          "亚厦股份",
-          "浔兴股份",
-          "西子洁能",
-          "智光电气"
+          "英 力 特",
+          "精艺股份",
+          "吉华集团",
+          "爱丽家居",
+          "凯撒文化",
+          "京粮控股"
         ]
       }
     ],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 88,
-    "broken": 30,
-    "promote_detail": "1进2: 今日2板10只 / 昨日首板63只"
+    "limit_up_sealed": 83,
+    "broken": 6,
+    "promote_detail": "1进2: 今日2板9只 / 昨日首板70只"
   },
   "status": {
     "indices": "ok",
