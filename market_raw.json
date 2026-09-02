@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-01",
-  "weekday": "Tuesday",
+  "date": "2026-09-02",
+  "weekday": "Wednesday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,238 +9,283 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3979.89,
-      "pct": -0.16
+      "price": 3941.39,
+      "pct": -0.97
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 3393.43,
-      "pct": -1.32
+      "price": 3312.24,
+      "pct": -2.39
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1647.53,
-      "pct": -2.19
+      "price": 1617.6,
+      "pct": -1.82
     }
   ],
   "breadth": {
-    "up": 3877,
-    "down": 2710,
-    "limit_up_sina": 105,
-    "limit_up": 83,
+    "up": 1647,
+    "down": 4947,
+    "limit_up_sina": 67,
+    "limit_up": 52,
     "limit_up_source": "东财涨停池",
-    "broken": 6,
-    "limit_down": 3
+    "broken": 15,
+    "limit_down": 13
   },
   "sectors_up": [
     {
-      "code": "BK1296",
-      "name": "视频媒体",
-      "pct": 20.02,
-      "inflow": 3.66
+      "code": "BK1382",
+      "name": "地面兵装Ⅲ",
+      "pct": 5.9,
+      "inflow": 12.81
     },
     {
-      "code": "BK1518",
-      "name": "种子",
-      "pct": 12.87,
-      "inflow": 16.85
+      "code": "BK1229",
+      "name": "地面兵装Ⅱ",
+      "pct": 5.9,
+      "inflow": 12.81
     },
     {
-      "code": "BK1261",
-      "name": "种植业",
-      "pct": 8.88,
-      "inflow": 18.18
+      "code": "BK1497",
+      "name": "化妆品制造及其他",
+      "pct": 5.27,
+      "inflow": 1.11
     },
     {
-      "code": "BK1515",
-      "name": "粮食种植",
-      "pct": 7.42,
-      "inflow": 0.23
+      "code": "BK1252",
+      "name": "化妆品",
+      "pct": 2.96,
+      "inflow": 1.51
     },
     {
-      "code": "BK1298",
-      "name": "文字媒体",
-      "pct": 6.89,
-      "inflow": -1.31
+      "code": "BK1441",
+      "name": "其他橡胶制品",
+      "pct": 2.56,
+      "inflow": 0.6
     }
   ],
   "sectors_down": [
     {
-      "code": "BK1625",
-      "name": "钨",
-      "pct": -4.81,
-      "inflow": -11.6
+      "code": "BK1515",
+      "name": "粮食种植",
+      "pct": -8.85,
+      "inflow": -0.7
     },
     {
-      "code": "BK1325",
-      "name": "半导体材料",
-      "pct": -4.19,
-      "inflow": -16.43
+      "code": "BK1518",
+      "name": "种子",
+      "pct": -7.7,
+      "inflow": -9.59
     },
     {
-      "code": "BK1039",
-      "name": "电子化学品Ⅱ",
-      "pct": -3.9,
-      "inflow": -12.86
+      "code": "BK1517",
+      "name": "食用菌",
+      "pct": -6.52,
+      "inflow": -0.32
     },
     {
-      "code": "BK1332",
-      "name": "电子化学品Ⅲ",
-      "pct": -3.9,
-      "inflow": -12.86
+      "code": "BK1261",
+      "name": "种植业",
+      "pct": -5.93,
+      "inflow": -11.91
     },
     {
-      "code": "BK1469",
-      "name": "涂料",
-      "pct": -3.76,
-      "inflow": -0.09
+      "code": "BK1298",
+      "name": "文字媒体",
+      "pct": -4.99,
+      "inflow": -3.15
     }
   ],
   "concepts_up": [
     {
-      "code": "BK0907",
-      "name": "转基因",
-      "pct": 7.79,
-      "inflow": 12.33
-    },
-    {
-      "code": "BK1086",
-      "name": "粮食概念",
-      "pct": 6.87,
-      "inflow": 25.95
+      "code": "BK1645",
+      "name": "昨日打二板以上表现",
+      "pct": 3.96,
+      "inflow": -5.07
     },
     {
       "code": "BK1051",
       "name": "昨日连板_含一字",
-      "pct": 5.65,
-      "inflow": -10.46
+      "pct": 3.51,
+      "inflow": -11.54
+    },
+    {
+      "code": "BK1675",
+      "name": "历史新高",
+      "pct": 2.92,
+      "inflow": -1.18
     },
     {
       "code": "BK0816",
       "name": "昨日连板",
-      "pct": 5.57,
-      "inflow": -7.79
+      "pct": 2.4,
+      "inflow": -5.51
     },
     {
-      "code": "BK0888",
-      "name": "农业种植",
-      "pct": 4.75,
-      "inflow": 24.52
+      "code": "BK0501",
+      "name": "次新股",
+      "pct": 1.29,
+      "inflow": -21.56
     }
   ],
   "inflow_top5": [
     {
-      "name": "农林牧渔",
-      "inflow": 28.76
+      "name": "国防军工",
+      "inflow": 27.44
     },
     {
-      "name": "非银金融",
-      "inflow": 27.82
+      "name": "线缆部件及其他",
+      "inflow": 20.07
     },
     {
-      "name": "医药生物",
-      "inflow": 20.19
+      "name": "电网设备",
+      "inflow": 14.82
     },
     {
-      "name": "种植业",
-      "inflow": 18.18
+      "name": "航空装备Ⅲ",
+      "inflow": 13.6
     },
     {
-      "name": "商贸零售",
-      "inflow": 17.25
+      "name": "航空装备Ⅱ",
+      "inflow": 13.6
     }
   ],
   "limit_up_list": [],
   "limit_down_list": [
     {
-      "code": "688020",
-      "name": "方邦股份",
-      "pct": -11.064,
+      "code": "601123",
+      "name": "C马矿",
+      "pct": -23.0,
       "reason": ""
     },
     {
-      "code": "688308",
-      "name": "欧科亿",
-      "pct": -10.846,
+      "code": "300189",
+      "name": "神农种业",
+      "pct": -11.391,
       "reason": ""
     },
     {
-      "code": "300870",
-      "name": "欧陆通",
+      "code": "300970",
+      "name": "华绿生物",
+      "pct": -10.965,
+      "reason": ""
+    },
+    {
+      "code": "301697",
+      "name": "C贝特利",
+      "pct": -10.641,
+      "reason": ""
+    },
+    {
+      "code": "000545",
+      "name": "金浦钛业",
+      "pct": -10.127,
+      "reason": ""
+    },
+    {
+      "code": "600613",
+      "name": "神奇制药",
+      "pct": -10.036,
+      "reason": ""
+    },
+    {
+      "code": "002742",
+      "name": "冀衡医药",
+      "pct": -10.018,
+      "reason": ""
+    },
+    {
+      "code": "605179",
+      "name": "一鸣食品",
+      "pct": -10.009,
+      "reason": ""
+    },
+    {
+      "code": "600272",
+      "name": "开开实业",
+      "pct": -10.005,
+      "reason": ""
+    },
+    {
+      "code": "002942",
+      "name": "新农股份",
+      "pct": -10.005,
+      "reason": ""
+    },
+    {
+      "code": "603395",
+      "name": "红四方",
       "pct": -10.0,
+      "reason": ""
+    },
+    {
+      "code": "600354",
+      "name": "敦煌种业",
+      "pct": -9.978,
+      "reason": ""
+    },
+    {
+      "code": "000713",
+      "name": "国投丰乐",
+      "pct": -9.944,
       "reason": ""
     }
   ],
   "broken_list": [],
   "board": {
-    "height": 7,
-    "seal_rate": 93.3,
-    "promote_rate": 12.9,
+    "height": 4,
+    "seal_rate": 77.6,
+    "promote_rate": 10.8,
     "ladder": [
       {
-        "day": 7,
-        "count": 1,
-        "names": [
-          "海鸥住工"
-        ]
-      },
-      {
-        "day": 6,
+        "day": 4,
         "count": 2,
         "names": [
-          "捷荣技术",
-          "万向德农"
-        ]
-      },
-      {
-        "day": 4,
-        "count": 1,
-        "names": [
-          "新赛股份"
+          "竞业达",
+          "国芳集团"
         ]
       },
       {
         "day": 3,
-        "count": 5,
-        "names": [
-          "福建金森",
-          "竞业达",
-          "时代出版",
-          "国芳集团",
-          "我爱我家"
-        ]
-      },
-      {
-        "day": 2,
-        "count": 9,
+        "count": 4,
         "names": [
           "欢瑞世纪",
-          "中广天择",
+          "集泰股份",
           "大晟文化",
-          "芒果超媒",
-          "掌阅科技",
           "龙版传媒"
         ]
       },
       {
-        "day": 1,
-        "count": 65,
+        "day": 2,
+        "count": 7,
         "names": [
           "英 力 特",
-          "精艺股份",
-          "吉华集团",
-          "爱丽家居",
-          "凯撒文化",
-          "京粮控股"
+          "茂业商业",
+          "小方制药",
+          "香溢融通",
+          "九牧王",
+          "内蒙一机"
+        ]
+      },
+      {
+        "day": 1,
+        "count": 39,
+        "names": [
+          "华昌化工",
+          "道明光学",
+          "石化机械",
+          "建设工业",
+          "天禾股份",
+          "长城军工"
         ]
       }
     ],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 83,
-    "broken": 6,
-    "promote_detail": "1进2: 今日2板9只 / 昨日首板70只"
+    "limit_up_sealed": 52,
+    "broken": 15,
+    "promote_detail": "1进2: 今日2板7只 / 昨日首板65只"
   },
   "status": {
     "indices": "ok",
