@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-04",
-  "weekday": "Friday",
+  "date": "2026-09-07",
+  "weekday": "Monday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,290 +9,239 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3930.12,
-      "pct": -0.3
+      "price": 3932.7,
+      "pct": 0.07
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 3286.55,
-      "pct": -0.78
+      "price": 3398.68,
+      "pct": 3.41
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1577.36,
-      "pct": -2.1
+      "price": 1615.53,
+      "pct": 2.42
     }
   ],
   "breadth": {
-    "up": 2824,
-    "down": 3684,
-    "limit_up_sina": 57,
-    "limit_up": 39,
+    "up": 4026,
+    "down": 2476,
+    "limit_up_sina": 148,
+    "limit_up": 93,
     "limit_up_source": "东财涨停池",
-    "broken": 48,
-    "limit_down": 16
+    "broken": 19,
+    "limit_down": 6
   },
   "sectors_up": [
     {
-      "code": "BK1508",
-      "name": "畜禽饲料",
-      "pct": 8.46,
-      "inflow": 7.85
+      "code": "BK1340",
+      "name": "印制电路板",
+      "pct": 7.62,
+      "inflow": 133.72
     },
     {
-      "code": "BK1512",
-      "name": "生猪养殖",
-      "pct": 6.23,
-      "inflow": 7.91
+      "code": "BK0459",
+      "name": "元件",
+      "pct": 6.72,
+      "inflow": 156.9
     },
     {
-      "code": "BK1556",
-      "name": "教育运营及其他",
-      "pct": 6.08,
-      "inflow": 0.08
+      "code": "BK1518",
+      "name": "种子",
+      "pct": 6.35,
+      "inflow": 0.39
     },
     {
-      "code": "BK1258",
-      "name": "饲料",
-      "pct": 5.98,
-      "inflow": 7.77
+      "code": "BK1516",
+      "name": "其他种植业",
+      "pct": 6.13,
+      "inflow": -0.68
     },
     {
-      "code": "BK1296",
-      "name": "视频媒体",
-      "pct": 5.46,
-      "inflow": 1.63
+      "code": "BK1591",
+      "name": "通信网络设备及器件",
+      "pct": 5.44,
+      "inflow": 165.31
     }
   ],
   "sectors_down": [
     {
-      "code": "BK1462",
-      "name": "玻纤制造",
-      "pct": -4.82,
-      "inflow": -28.26
+      "code": "BK1412",
+      "name": "氨纶",
+      "pct": -3.83,
+      "inflow": 0.12
     },
     {
-      "code": "BK1326",
-      "name": "半导体设备",
-      "pct": -4.13,
-      "inflow": -25.67
+      "code": "BK1469",
+      "name": "涂料",
+      "pct": -3.23,
+      "inflow": -0.06
     },
     {
-      "code": "BK1325",
-      "name": "半导体材料",
-      "pct": -3.75,
-      "inflow": -16.23
+      "code": "BK1616",
+      "name": "白银",
+      "pct": -3.16,
+      "inflow": -4.54
     },
     {
-      "code": "BK1039",
-      "name": "电子化学品Ⅱ",
-      "pct": -3.5,
-      "inflow": -21.44
+      "code": "BK1348",
+      "name": "辅料",
+      "pct": -3.01,
+      "inflow": -0.78
     },
     {
-      "code": "BK1332",
-      "name": "电子化学品Ⅲ",
-      "pct": -3.5,
-      "inflow": -21.44
+      "code": "BK0732",
+      "name": "贵金属",
+      "pct": -3.0,
+      "inflow": -14.96
     }
   ],
   "concepts_up": [
     {
-      "code": "BK0882",
-      "name": "猪肉概念",
-      "pct": 5.42,
-      "inflow": 16.01
+      "code": "BK0816",
+      "name": "昨日连板",
+      "pct": 7.34,
+      "inflow": 2.36
     },
     {
-      "code": "BK0887",
-      "name": "鸡肉概念",
-      "pct": 4.89,
-      "inflow": 3.92
+      "code": "BK1051",
+      "name": "昨日连板_含一字",
+      "pct": 7.19,
+      "inflow": 2.65
     },
     {
-      "code": "BK0967",
-      "name": "水产概念",
-      "pct": 3.1,
-      "inflow": 1.59
+      "code": "BK1128",
+      "name": "CPO概念",
+      "pct": 6.5,
+      "inflow": 288.42
     },
     {
-      "code": "BK0477",
-      "name": "酿酒概念",
-      "pct": 2.84,
-      "inflow": 13.28
+      "code": "BK1136",
+      "name": "光通信模块",
+      "pct": 5.99,
+      "inflow": 268.93
     },
     {
-      "code": "BK1025",
-      "name": "预制菜概念",
-      "pct": 2.77,
-      "inflow": 6.0
+      "code": "BK1050",
+      "name": "昨日涨停_含一字",
+      "pct": 4.53,
+      "inflow": 1.4
     }
   ],
   "inflow_top5": [
     {
-      "name": "传媒",
-      "inflow": 61.74
+      "name": "电子",
+      "inflow": 306.95
     },
     {
-      "name": "广告营销",
-      "inflow": 38.62
+      "name": "通信设备",
+      "inflow": 201.35
     },
     {
-      "name": "营销代理",
-      "inflow": 37.72
+      "name": "通信",
+      "inflow": 200.35
     },
     {
-      "name": "农林牧渔",
-      "inflow": 30.16
+      "name": "通信网络设备及器件",
+      "inflow": 165.31
     },
     {
-      "name": "软件开发",
-      "inflow": 23.58
+      "name": "元件",
+      "inflow": 156.9
     }
   ],
   "limit_up_list": [],
   "limit_down_list": [
     {
-      "code": "301326",
-      "name": "捷邦科技",
-      "pct": -11.489,
+      "code": "920289",
+      "name": "华汇智能",
+      "pct": -24.693,
       "reason": ""
     },
     {
-      "code": "688809",
-      "name": "强一股份",
-      "pct": -10.235,
+      "code": "688795",
+      "name": "摩尔线程",
+      "pct": -19.998,
       "reason": ""
     },
     {
-      "code": "300990",
-      "name": "同飞股份",
-      "pct": -10.083,
+      "code": "300840",
+      "name": "酷特智能",
+      "pct": -10.487,
       "reason": ""
     },
     {
-      "code": "000017",
-      "name": "深中华A",
-      "pct": -10.019,
+      "code": "300911",
+      "name": "亿田智能",
+      "pct": -10.469,
       "reason": ""
     },
     {
-      "code": "600121",
-      "name": "郑州煤电",
-      "pct": -10.018,
+      "code": "600076",
+      "name": "康欣新材",
+      "pct": -10.095,
       "reason": ""
     },
     {
-      "code": "603256",
-      "name": "宏和科技",
-      "pct": -10.0,
-      "reason": ""
-    },
-    {
-      "code": "605068",
-      "name": "明新旭腾",
-      "pct": -10.0,
-      "reason": ""
-    },
-    {
-      "code": "003032",
-      "name": "传智教育",
-      "pct": -10.0,
-      "reason": ""
-    },
-    {
-      "code": "000977",
-      "name": "浪潮信息",
-      "pct": -9.994,
-      "reason": ""
-    },
-    {
-      "code": "002909",
-      "name": "集泰股份",
-      "pct": -9.988,
-      "reason": ""
-    },
-    {
-      "code": "003005",
-      "name": "竞业达",
-      "pct": -9.985,
-      "reason": ""
-    },
-    {
-      "code": "300672",
-      "name": "国科微",
-      "pct": -9.968,
-      "reason": ""
-    },
-    {
-      "code": "603353",
-      "name": "和顺石油",
-      "pct": -9.952,
-      "reason": ""
-    },
-    {
-      "code": "600892",
-      "name": "大晟文化",
-      "pct": -9.908,
-      "reason": ""
-    },
-    {
-      "code": "600610",
-      "name": "中毅达",
-      "pct": -9.905,
-      "reason": ""
-    },
-    {
-      "code": "603339",
-      "name": "四方科技",
-      "pct": -9.849,
+      "code": "002674",
+      "name": "兴业科技",
+      "pct": -10.017,
       "reason": ""
     }
   ],
   "broken_list": [],
   "board": {
-    "height": 5,
-    "seal_rate": 44.8,
-    "promote_rate": 17.1,
+    "height": 6,
+    "seal_rate": 83.0,
+    "promote_rate": 28.1,
     "ladder": [
       {
-        "day": 5,
+        "day": 6,
         "count": 1,
         "names": [
           "龙版传媒"
         ]
       },
       {
-        "day": 2,
-        "count": 6,
+        "day": 3,
+        "count": 3,
         "names": [
-          "新炬网络",
-          "恒盛能源",
-          "爱仕达",
           "亚盛集团",
-          "海通发展",
-          "百大集团"
+          "百大集团",
+          "爱仕达"
+        ]
+      },
+      {
+        "day": 2,
+        "count": 9,
+        "names": [
+          "海欣食品",
+          "播恩集团",
+          "罗 牛 山",
+          "安记食品",
+          "敦煌种业",
+          "中水渔业"
         ]
       },
       {
         "day": 1,
-        "count": 32,
+        "count": 80,
         "names": [
-          "楚天龙",
-          "翠微股份",
-          "高争民爆",
-          "会稽山",
-          "通达电气",
-          "播恩集团"
+          "美格智能",
+          "长江材料",
+          "剑桥科技",
+          "国芳集团",
+          "共进股份",
+          "科森科技"
         ]
       }
     ],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 39,
-    "broken": 48,
-    "promote_detail": "1进2: 今日2板6只 / 昨日首板35只"
+    "limit_up_sealed": 93,
+    "broken": 19,
+    "promote_detail": "1进2: 今日2板9只 / 昨日首板32只"
   },
   "status": {
     "indices": "ok",
