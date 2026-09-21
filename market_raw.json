@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-18",
-  "weekday": "Friday",
+  "date": "2026-09-21",
+  "weekday": "Monday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,174 +9,83 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3911.87,
-      "pct": 0.94
+      "price": 3949.91,
+      "pct": 0.97
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 3372.68,
-      "pct": 2.25
+      "price": 3399.59,
+      "pct": 0.8
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1652.63,
-      "pct": 2.88
+      "price": 1657.48,
+      "pct": 0.29
     }
   ],
   "breadth": {
-    "up": 5162,
-    "down": 1368,
-    "limit_up_sina": 122,
-    "limit_up": 78,
+    "up": 5448,
+    "down": 1185,
+    "limit_up_sina": 144,
+    "limit_up": 103,
     "limit_up_source": "东财涨停池",
     "broken": 25,
-    "limit_down": 1
+    "limit_down": 5
   },
-  "sectors_up": [
-    {
-      "code": "BK1599",
-      "name": "其他医疗服务",
-      "pct": 6.72,
-      "inflow": 1.97
-    },
-    {
-      "code": "BK1341",
-      "name": "房产租赁经纪",
-      "pct": 4.86,
-      "inflow": 1.0
-    },
-    {
-      "code": "BK1326",
-      "name": "半导体设备",
-      "pct": 4.83,
-      "inflow": 18.2
-    },
-    {
-      "code": "BK1331",
-      "name": "数字芯片设计",
-      "pct": 4.68,
-      "inflow": 75.35
-    },
-    {
-      "code": "BK1329",
-      "name": "集成电路制造",
-      "pct": 4.59,
-      "inflow": 12.4
-    }
-  ],
-  "sectors_down": [
-    {
-      "code": "BK1510",
-      "name": "其他养殖",
-      "pct": -3.47,
-      "inflow": -0.16
-    },
-    {
-      "code": "BK1518",
-      "name": "种子",
-      "pct": -1.52,
-      "inflow": -2.04
-    },
-    {
-      "code": "BK1469",
-      "name": "涂料",
-      "pct": -1.51,
-      "inflow": -0.1
-    },
-    {
-      "code": "BK1523",
-      "name": "汽车经销商",
-      "pct": -1.49,
-      "inflow": -0.01
-    },
-    {
-      "code": "BK1016",
-      "name": "汽车服务",
-      "pct": -1.11,
-      "inflow": -0.07
-    }
-  ],
-  "concepts_up": [
-    {
-      "code": "BK1121",
-      "name": "第四代半导体",
-      "pct": 4.96,
-      "inflow": 1.22
-    },
-    {
-      "code": "BK0501",
-      "name": "次新股",
-      "pct": 4.66,
-      "inflow": 36.68
-    },
-    {
-      "code": "BK1645",
-      "name": "昨日打二板以上表现",
-      "pct": 4.03,
-      "inflow": -1.67
-    },
-    {
-      "code": "BK1051",
-      "name": "昨日连板_含一字",
-      "pct": 3.88,
-      "inflow": -3.77
-    },
-    {
-      "code": "BK0969",
-      "name": "汽车芯片",
-      "pct": 3.85,
-      "inflow": 57.5
-    }
-  ],
-  "inflow_top5": [
-    {
-      "name": "电子",
-      "inflow": 198.54
-    },
-    {
-      "name": "半导体",
-      "inflow": 182.2
-    },
-    {
-      "name": "数字芯片设计",
-      "inflow": 75.35
-    },
-    {
-      "name": "通信网络设备及器件",
-      "inflow": 67.53
-    },
-    {
-      "name": "集成电路封测",
-      "inflow": 50.83
-    }
-  ],
+  "sectors_up": [],
+  "sectors_down": [],
+  "concepts_up": [],
+  "inflow_top5": [],
   "limit_up_list": [],
   "limit_down_list": [
     {
+      "code": "601091",
+      "name": "C沈鼓集团",
+      "pct": -34.707,
+      "reason": ""
+    },
+    {
+      "code": "688135",
+      "name": "利扬芯片",
+      "pct": -12.761,
+      "reason": ""
+    },
+    {
       "code": "002528",
       "name": "*ST英飞",
-      "pct": -10.028,
+      "pct": -10.062,
+      "reason": ""
+    },
+    {
+      "code": "003013",
+      "name": "地铁设计",
+      "pct": -10.016,
+      "reason": ""
+    },
+    {
+      "code": "605198",
+      "name": "安德利",
+      "pct": -10.002,
       "reason": ""
     }
   ],
   "broken_list": [],
   "board": {
-    "height": 4,
-    "seal_rate": 75.7,
-    "promote_rate": 21.1,
+    "height": 5,
+    "seal_rate": 80.5,
+    "promote_rate": 19.7,
     "ladder": [
       {
-        "day": 4,
-        "count": 2,
+        "day": 5,
+        "count": 1,
         "names": [
-          "华瓷股份",
-          "锡华科技"
+          "华瓷股份"
         ]
       },
       {
-        "day": 3,
+        "day": 4,
         "count": 2,
         "names": [
           "内蒙新华",
@@ -184,41 +93,53 @@
         ]
       },
       {
-        "day": 2,
-        "count": 8,
+        "day": 3,
+        "count": 5,
         "names": [
-          "华软科技",
-          "经纬股份",
-          "华纺股份",
           "南华生物",
           "龙头股份",
-          "科森科技"
+          "华软科技",
+          "华纺股份",
+          "金健米业"
+        ]
+      },
+      {
+        "day": 2,
+        "count": 13,
+        "names": [
+          "马矿股份",
+          "大亚圣象",
+          "诚邦股份",
+          "新华文轩",
+          "百通能源",
+          "博通集成"
         ]
       },
       {
         "day": 1,
-        "count": 66,
+        "count": 82,
         "names": [
-          "百通能源",
-          "福龙马",
-          "海安集团",
-          "中电鑫龙",
-          "国脉文化",
-          "瑞康医药"
+          "华媒控股",
+          "华远控股",
+          "华锡有色",
+          "新华传媒",
+          "奥佳华",
+          "澳洋健康"
         ]
       }
     ],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 78,
+    "limit_up_sealed": 103,
     "broken": 25,
-    "promote_detail": "1进2: 今日2板8只 / 昨日首板38只"
+    "promote_detail": "1进2: 今日2板13只 / 昨日首板66只"
   },
   "status": {
     "indices": "ok",
     "breadth_em": "ok",
     "limit_up_sina": "ok",
-    "sectors": "ok",
-    "concepts": "ok",
+    "sectors": "unreachable:HTTP Error 502: Bad Gateway",
+    "concepts": "unreachable:HTTP Error 502: Bad Gateway",
+    "sectors_detail": "unreachable:HTTP Error 502: Bad Gateway",
     "board_akshare": "ok",
     "limit_up": "ok",
     "limit_down": "ok"
