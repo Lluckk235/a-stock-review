@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-24",
-  "weekday": "Thursday",
+  "date": "2026-09-25",
+  "weekday": "Friday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -26,8 +26,6 @@
     }
   ],
   "breadth": {
-    "up": 1352,
-    "down": 5224,
     "limit_up_sina": 65,
     "limit_up": 52,
     "limit_up_source": "东财涨停池",
@@ -66,9 +64,92 @@
       "inflow": 0.74
     }
   ],
-  "sectors_down": [],
-  "concepts_up": [],
-  "inflow_top5": [],
+  "sectors_down": [
+    {
+      "code": "BK1616",
+      "name": "白银",
+      "pct": -4.83,
+      "inflow": -3.8
+    },
+    {
+      "code": "BK1340",
+      "name": "印制电路板",
+      "pct": -4.74,
+      "inflow": -74.13
+    },
+    {
+      "code": "BK1292",
+      "name": "广告媒体",
+      "pct": -4.7,
+      "inflow": -0.5
+    },
+    {
+      "code": "BK0732",
+      "name": "贵金属",
+      "pct": -4.63,
+      "inflow": -13.3
+    },
+    {
+      "code": "BK1600",
+      "name": "医疗研发外包",
+      "pct": -4.61,
+      "inflow": -22.41
+    }
+  ],
+  "concepts_up": [
+    {
+      "code": "BK1051",
+      "name": "昨日连板_含一字",
+      "pct": 1.4,
+      "inflow": -8.26
+    },
+    {
+      "code": "BK1645",
+      "name": "昨日打二板以上表现",
+      "pct": 1.29,
+      "inflow": -6.02
+    },
+    {
+      "code": "BK1145",
+      "name": "机器人执行器",
+      "pct": 0.74,
+      "inflow": 10.41
+    },
+    {
+      "code": "BK1050",
+      "name": "昨日涨停_含一字",
+      "pct": 0.55,
+      "inflow": -4.55
+    },
+    {
+      "code": "BK1147",
+      "name": "SPD概念",
+      "pct": 0.41,
+      "inflow": 0.91
+    }
+  ],
+  "inflow_top5": [
+    {
+      "name": "汽车零部件",
+      "inflow": 9.9
+    },
+    {
+      "name": "国防军工",
+      "inflow": 8.84
+    },
+    {
+      "name": "军工电子Ⅲ",
+      "inflow": 7.5
+    },
+    {
+      "name": "军工电子Ⅱ",
+      "inflow": 7.5
+    },
+    {
+      "name": "风电设备",
+      "inflow": 6.97
+    }
+  ],
   "limit_up_list": [],
   "limit_down_list": [
     {
@@ -289,11 +370,10 @@
   },
   "status": {
     "indices": "ok",
-    "breadth_em": "ok",
+    "breadth_em": "unreachable:HTTP Error 502: Bad Gateway",
     "limit_up_sina": "ok",
     "sectors": "ok",
-    "concepts": "unreachable:HTTP Error 502: Bad Gateway",
-    "sectors_detail": "unreachable:HTTP Error 502: Bad Gateway",
+    "concepts": "ok",
     "board_akshare": "ok",
     "limit_up": "ok",
     "limit_down": "ok"
