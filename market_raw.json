@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-28",
-  "weekday": "Monday",
+  "date": "2026-09-29",
+  "weekday": "Tuesday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,147 +9,258 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3823.62,
-      "pct": -1.67
+      "price": 3830.45,
+      "pct": 0.18
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 3139.82,
-      "pct": -4.53
+      "price": 3142.56,
+      "pct": 0.09
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1555.98,
-      "pct": -4.06
+      "price": 1569.34,
+      "pct": 0.86
     }
   ],
   "breadth": {
-    "up": 1041,
-    "down": 5573,
-    "limit_up_sina": 41,
-    "limit_up": 33,
+    "up": 4302,
+    "down": 2257,
+    "limit_up_sina": 80,
+    "limit_up": 57,
     "limit_up_source": "东财涨停池",
-    "broken": 11,
-    "limit_down": 0
+    "broken": 8,
+    "limit_down": 17
   },
   "sectors_up": [
     {
-      "code": "BK1457",
-      "name": "厨房小家电",
-      "pct": 2.66,
-      "inflow": 1.32
-    },
-    {
       "code": "BK1305",
       "name": "燃料电池",
-      "pct": 2.16,
-      "inflow": 0.26
+      "pct": 7.73,
+      "inflow": 0.15
     },
     {
-      "code": "BK1530",
-      "name": "商用载货车",
-      "pct": 1.89,
-      "inflow": 5.76
+      "code": "BK1304",
+      "name": "锂电专用设备",
+      "pct": 7.17,
+      "inflow": 7.65
     },
     {
-      "code": "BK1375",
-      "name": "光伏发电",
-      "pct": 1.61,
-      "inflow": 2.66
+      "code": "BK1298",
+      "name": "文字媒体",
+      "pct": 6.77,
+      "inflow": 1.2
     },
     {
-      "code": "BK1264",
-      "name": "商用车",
-      "pct": 1.59,
-      "inflow": 6.3
+      "code": "BK1296",
+      "name": "视频媒体",
+      "pct": 5.54,
+      "inflow": 1.37
+    },
+    {
+      "code": "BK1340",
+      "name": "印制电路板",
+      "pct": 5.43,
+      "inflow": 29.51
     }
   ],
   "sectors_down": [],
   "concepts_up": [
     {
-      "code": "BK1029",
-      "name": "汽车整车",
-      "pct": 1.36,
-      "inflow": 10.43
+      "code": "BK0822",
+      "name": "租售同权",
+      "pct": 3.57,
+      "inflow": 10.62
     },
     {
-      "code": "BK0894",
-      "name": "阿兹海默",
-      "pct": 0.74,
-      "inflow": -0.07
+      "code": "BK1630",
+      "name": "昨日首板",
+      "pct": 3.14,
+      "inflow": 3.75
     },
     {
-      "code": "BK0887",
-      "name": "鸡肉概念",
-      "pct": 0.73,
-      "inflow": 0.76
+      "code": "BK0972",
+      "name": "快手概念",
+      "pct": 3.06,
+      "inflow": 3.58
     },
     {
-      "code": "BK0882",
-      "name": "猪肉概念",
-      "pct": 0.67,
-      "inflow": 2.58
+      "code": "BK0959",
+      "name": "数字阅读",
+      "pct": 2.96,
+      "inflow": 1.77
     },
     {
-      "code": "BK0868",
-      "name": "GDR",
-      "pct": 0.52,
-      "inflow": -0.81
+      "code": "BK1151",
+      "name": "短剧互动游戏",
+      "pct": 2.84,
+      "inflow": 7.11
     }
   ],
   "inflow_top5": [],
   "limit_up_list": [],
-  "limit_down_list": [],
+  "limit_down_list": [
+    {
+      "code": "301686",
+      "name": "C中塑",
+      "pct": -17.098,
+      "reason": ""
+    },
+    {
+      "code": "920025",
+      "name": "凯达重工",
+      "pct": -12.895,
+      "reason": ""
+    },
+    {
+      "code": "920229",
+      "name": "世纪数码",
+      "pct": -12.062,
+      "reason": ""
+    },
+    {
+      "code": "920201",
+      "name": "百瑞吉",
+      "pct": -11.498,
+      "reason": ""
+    },
+    {
+      "code": "002717",
+      "name": "*ST岭南",
+      "pct": -10.39,
+      "reason": ""
+    },
+    {
+      "code": "600815",
+      "name": "厦工股份",
+      "pct": -10.024,
+      "reason": ""
+    },
+    {
+      "code": "600371",
+      "name": "万向德农",
+      "pct": -10.021,
+      "reason": ""
+    },
+    {
+      "code": "001234",
+      "name": "泰慕士",
+      "pct": -10.013,
+      "reason": ""
+    },
+    {
+      "code": "603396",
+      "name": "金辰股份",
+      "pct": -10.0,
+      "reason": ""
+    },
+    {
+      "code": "001368",
+      "name": "通达创智",
+      "pct": -10.0,
+      "reason": ""
+    },
+    {
+      "code": "002827",
+      "name": "高争民爆",
+      "pct": -9.996,
+      "reason": ""
+    },
+    {
+      "code": "603823",
+      "name": "百合花",
+      "pct": -9.994,
+      "reason": ""
+    },
+    {
+      "code": "601579",
+      "name": "会稽山",
+      "pct": -9.99,
+      "reason": ""
+    },
+    {
+      "code": "600127",
+      "name": "金健米业",
+      "pct": -9.973,
+      "reason": ""
+    },
+    {
+      "code": "601086",
+      "name": "国芳集团",
+      "pct": -9.968,
+      "reason": ""
+    },
+    {
+      "code": "000850",
+      "name": "华茂股份",
+      "pct": -9.922,
+      "reason": ""
+    },
+    {
+      "code": "688559",
+      "name": "海目星",
+      "pct": -9.857,
+      "reason": ""
+    }
+  ],
   "broken_list": [],
   "board": {
-    "height": 5,
-    "seal_rate": 75.0,
-    "promote_rate": 7.7,
+    "height": 6,
+    "seal_rate": 87.7,
+    "promote_rate": 26.9,
     "ladder": [
       {
-        "day": 5,
+        "day": 6,
         "count": 1,
         "names": [
           "新华传媒"
         ]
       },
       {
-        "day": 3,
-        "count": 3,
+        "day": 4,
+        "count": 1,
         "names": [
-          "雪龙集团",
-          "金辰股份",
-          "福建水泥"
+          "雪龙集团"
+        ]
+      },
+      {
+        "day": 3,
+        "count": 1,
+        "names": [
+          "襄阳轴承"
         ]
       },
       {
         "day": 2,
-        "count": 3,
+        "count": 7,
         "names": [
-          "大业股份",
-          "襄阳轴承",
-          "吉鑫科技"
+          "深物业A",
+          "时代万恒",
+          "津药药业",
+          "九阳股份",
+          "浙江新能",
+          "中新赛克"
         ]
       },
       {
         "day": 1,
-        "count": 26,
+        "count": 47,
         "names": [
-          "博纳影业",
-          "中新赛克",
-          "会稽山",
-          "跨境通",
-          "国新健康",
-          "九阳股份"
+          "广汽集团",
+          "园林股份",
+          "上海洗霸",
+          "信达地产",
+          "宁波能源",
+          "泉阳泉"
         ]
       }
     ],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 33,
-    "broken": 11,
-    "promote_detail": "1进2: 今日2板3只 / 昨日首板39只"
+    "limit_up_sealed": 57,
+    "broken": 8,
+    "promote_detail": "1进2: 今日2板7只 / 昨日首板26只"
   },
   "status": {
     "indices": "ok",
