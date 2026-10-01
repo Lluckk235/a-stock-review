@@ -1,6 +1,6 @@
 {
-  "date": "2026-09-30",
-  "weekday": "Wednesday",
+  "date": "2026-10-01",
+  "weekday": "Thursday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -26,132 +26,16 @@
     }
   ],
   "breadth": {
-    "up": 2834,
-    "down": 3723,
     "limit_up_sina": 75,
     "limit_up": 52,
     "limit_up_source": "东财涨停池",
     "broken": 12,
     "limit_down": 20
   },
-  "sectors_up": [
-    {
-      "code": "BK1296",
-      "name": "视频媒体",
-      "pct": 6.06,
-      "inflow": 2.61
-    },
-    {
-      "code": "BK1500",
-      "name": "医美耗材",
-      "pct": 5.23,
-      "inflow": 0.73
-    },
-    {
-      "code": "BK1596",
-      "name": "其他生物制品",
-      "pct": 4.72,
-      "inflow": 9.09
-    },
-    {
-      "code": "BK1598",
-      "name": "疫苗",
-      "pct": 4.64,
-      "inflow": 4.23
-    },
-    {
-      "code": "BK1044",
-      "name": "生物制品",
-      "pct": 4.53,
-      "inflow": 13.52
-    }
-  ],
-  "sectors_down": [
-    {
-      "code": "BK1340",
-      "name": "印制电路板",
-      "pct": -4.56,
-      "inflow": -31.62
-    },
-    {
-      "code": "BK1328",
-      "name": "集成电路封测",
-      "pct": -4.1,
-      "inflow": -17.06
-    },
-    {
-      "code": "BK0459",
-      "name": "元件",
-      "pct": -4.01,
-      "inflow": -39.33
-    },
-    {
-      "code": "BK1329",
-      "name": "集成电路制造",
-      "pct": -3.58,
-      "inflow": -7.19
-    },
-    {
-      "code": "BK1325",
-      "name": "半导体材料",
-      "pct": -3.38,
-      "inflow": -12.24
-    }
-  ],
-  "concepts_up": [
-    {
-      "code": "BK1063",
-      "name": "重组蛋白",
-      "pct": 4.33,
-      "inflow": 11.66
-    },
-    {
-      "code": "BK1051",
-      "name": "昨日连板_含一字",
-      "pct": 4.25,
-      "inflow": 2.12
-    },
-    {
-      "code": "BK0899",
-      "name": "CRO",
-      "pct": 3.8,
-      "inflow": 27.27
-    },
-    {
-      "code": "BK0816",
-      "name": "昨日连板",
-      "pct": 3.75,
-      "inflow": -0.5
-    },
-    {
-      "code": "BK1716",
-      "name": "反转股",
-      "pct": 3.63,
-      "inflow": 1.43
-    }
-  ],
-  "inflow_top5": [
-    {
-      "name": "医药生物",
-      "inflow": 61.91
-    },
-    {
-      "name": "医疗服务",
-      "inflow": 26.03
-    },
-    {
-      "name": "医疗研发外包",
-      "inflow": 22.28
-    },
-    {
-      "name": "化学制药",
-      "inflow": 19.45
-    },
-    {
-      "name": "能源金属",
-      "inflow": 15.71
-    }
-  ],
+  "sectors_up": [],
+  "sectors_down": [],
+  "concepts_up": [],
+  "inflow_top5": [],
   "limit_up_list": [],
   "limit_down_list": [
     {
@@ -337,10 +221,11 @@
   },
   "status": {
     "indices": "ok",
-    "breadth_em": "ok",
+    "breadth_em": "unreachable:HTTP Error 502: Bad Gateway",
     "limit_up_sina": "ok",
-    "sectors": "ok",
-    "concepts": "ok",
+    "sectors": "unreachable:HTTP Error 502: Bad Gateway",
+    "concepts": "unreachable:HTTP Error 502: Bad Gateway",
+    "sectors_detail": "unreachable:HTTP Error 502: Bad Gateway",
     "board_akshare": "ok",
     "limit_up": "ok",
     "limit_down": "ok"
