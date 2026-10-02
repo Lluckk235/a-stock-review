@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-01",
-  "weekday": "Thursday",
+  "date": "2026-10-02",
+  "weekday": "Friday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -26,6 +26,8 @@
     }
   ],
   "breadth": {
+    "up": 2834,
+    "down": 3723,
     "limit_up_sina": 75,
     "limit_up": 52,
     "limit_up_source": "东财涨停池",
@@ -221,7 +223,7 @@
   },
   "status": {
     "indices": "ok",
-    "breadth_em": "unreachable:HTTP Error 502: Bad Gateway",
+    "breadth_em": "ok",
     "limit_up_sina": "ok",
     "sectors": "unreachable:HTTP Error 502: Bad Gateway",
     "concepts": "unreachable:HTTP Error 502: Bad Gateway",
