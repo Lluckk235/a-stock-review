@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-02",
-  "weekday": "Friday",
+  "date": "2026-10-05",
+  "weekday": "Monday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -34,7 +34,38 @@
     "broken": 12,
     "limit_down": 20
   },
-  "sectors_up": [],
+  "sectors_up": [
+    {
+      "code": "BK1296",
+      "name": "视频媒体",
+      "pct": 6.06,
+      "inflow": 2.61
+    },
+    {
+      "code": "BK1500",
+      "name": "医美耗材",
+      "pct": 5.23,
+      "inflow": 0.73
+    },
+    {
+      "code": "BK1596",
+      "name": "其他生物制品",
+      "pct": 4.72,
+      "inflow": 9.09
+    },
+    {
+      "code": "BK1598",
+      "name": "疫苗",
+      "pct": 4.64,
+      "inflow": 4.23
+    },
+    {
+      "code": "BK1044",
+      "name": "生物制品",
+      "pct": 4.53,
+      "inflow": 13.52
+    }
+  ],
   "sectors_down": [],
   "concepts_up": [],
   "inflow_top5": [],
@@ -225,7 +256,7 @@
     "indices": "ok",
     "breadth_em": "ok",
     "limit_up_sina": "ok",
-    "sectors": "unreachable:HTTP Error 502: Bad Gateway",
+    "sectors": "ok",
     "concepts": "unreachable:HTTP Error 502: Bad Gateway",
     "sectors_detail": "unreachable:HTTP Error 502: Bad Gateway",
     "board_akshare": "ok",
