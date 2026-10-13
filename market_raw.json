@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-12",
-  "weekday": "Monday",
+  "date": "2026-10-13",
+  "weekday": "Tuesday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,372 +9,276 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3797.24,
-      "pct": -0.43
+      "price": 3800.86,
+      "pct": 0.1
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 2963.82,
-      "pct": -2.61
+      "price": 2958.34,
+      "pct": -0.18
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1426.72,
-      "pct": -2.1
+      "price": 1427.18,
+      "pct": 0.03
     }
   ],
   "breadth": {
-    "limit_up_sina": 59,
-    "limit_up": 46,
+    "up": 3670,
+    "down": 2868,
+    "limit_up_sina": 83,
+    "limit_up": 67,
     "limit_up_source": "东财涨停池",
-    "broken": 25,
-    "limit_down": 40
+    "broken": 19,
+    "limit_down": 12
   },
   "sectors_up": [
     {
-      "code": "BK1298",
-      "name": "文字媒体",
-      "pct": 6.91,
-      "inflow": 2.5
+      "code": "BK1295",
+      "name": "其他数字媒体",
+      "pct": 11.94,
+      "inflow": 3.47
     },
     {
-      "code": "BK1296",
-      "name": "视频媒体",
-      "pct": 5.04,
-      "inflow": -0.06
+      "code": "BK1340",
+      "name": "印制电路板",
+      "pct": 6.08,
+      "inflow": 20.88
+    },
+    {
+      "code": "BK1423",
+      "name": "纺织化学制品",
+      "pct": 5.43,
+      "inflow": 3.67
+    },
+    {
+      "code": "BK0459",
+      "name": "元件",
+      "pct": 4.77,
+      "inflow": 13.67
+    },
+    {
+      "code": "BK1382",
+      "name": "地面兵装Ⅲ",
+      "pct": 4.54,
+      "inflow": 3.31
+    }
+  ],
+  "sectors_down": [
+    {
+      "code": "BK1304",
+      "name": "锂电专用设备",
+      "pct": -3.32,
+      "inflow": -5.82
+    },
+    {
+      "code": "BK1302",
+      "name": "电池化学品",
+      "pct": -3.14,
+      "inflow": -15.26
+    },
+    {
+      "code": "BK0474",
+      "name": "保险Ⅱ",
+      "pct": -3.12,
+      "inflow": -8.56
+    },
+    {
+      "code": "BK1358",
+      "name": "保险Ⅲ",
+      "pct": -3.12,
+      "inflow": -8.56
     },
     {
       "code": "BK1320",
       "name": "逆变器",
-      "pct": 4.42,
-      "inflow": 3.97
-    },
-    {
-      "code": "BK1299",
-      "name": "影视动漫制作",
-      "pct": 4.24,
-      "inflow": 6.6
-    },
-    {
-      "code": "BK1289",
-      "name": "大众出版",
-      "pct": 4.08,
-      "inflow": 3.64
+      "pct": -2.99,
+      "inflow": -2.47
     }
   ],
-  "sectors_down": [],
-  "concepts_up": [],
-  "inflow_top5": [],
+  "concepts_up": [
+    {
+      "code": "BK1185",
+      "name": "冰雪经济",
+      "pct": 3.31,
+      "inflow": 9.91
+    },
+    {
+      "code": "BK1199",
+      "name": "2025三季报预减",
+      "pct": 2.89,
+      "inflow": -0.22
+    },
+    {
+      "code": "BK0949",
+      "name": "氦气概念",
+      "pct": 2.86,
+      "inflow": 9.8
+    },
+    {
+      "code": "BK1142",
+      "name": "裸眼3D",
+      "pct": 2.65,
+      "inflow": 8.26
+    },
+    {
+      "code": "BK0933",
+      "name": "退税商店",
+      "pct": 2.58,
+      "inflow": 0.05
+    }
+  ],
+  "inflow_top5": [
+    {
+      "name": "印制电路板",
+      "inflow": 20.88
+    },
+    {
+      "name": "集成电路制造",
+      "inflow": 20.52
+    },
+    {
+      "name": "国防军工",
+      "inflow": 19.33
+    },
+    {
+      "name": "元件",
+      "inflow": 13.67
+    },
+    {
+      "name": "电子",
+      "inflow": 12.84
+    }
+  ],
   "limit_up_list": [],
   "limit_down_list": [
     {
-      "code": "688670",
-      "name": "金迪克",
-      "pct": -19.979,
+      "code": "688778",
+      "name": "厦钨新能",
+      "pct": -10.041,
       "reason": ""
     },
     {
-      "code": "688796",
-      "name": "百奥赛图",
-      "pct": -17.76,
+      "code": "603008",
+      "name": "ST喜临门",
+      "pct": -10.035,
       "reason": ""
     },
     {
-      "code": "300198",
-      "name": "*ST纳川",
-      "pct": -15.126,
+      "code": "002768",
+      "name": "国恩股份",
+      "pct": -10.001,
       "reason": ""
     },
     {
-      "code": "688662",
-      "name": "富信科技",
-      "pct": -13.646,
+      "code": "002058",
+      "name": "紫竹高科",
+      "pct": -10.0,
       "reason": ""
     },
     {
-      "code": "001246",
-      "name": "C力勤",
-      "pct": -13.43,
-      "reason": ""
-    },
-    {
-      "code": "688399",
-      "name": "硕世生物",
-      "pct": -12.066,
-      "reason": ""
-    },
-    {
-      "code": "300464",
-      "name": "星徽股份",
-      "pct": -10.802,
-      "reason": ""
-    },
-    {
-      "code": "688117",
-      "name": "圣诺生物",
-      "pct": -10.76,
-      "reason": ""
-    },
-    {
-      "code": "688655",
-      "name": "迅捷兴",
-      "pct": -10.756,
-      "reason": ""
-    },
-    {
-      "code": "920779",
-      "name": "武汉蓝电",
-      "pct": -10.506,
-      "reason": ""
-    },
-    {
-      "code": "301716",
-      "name": "C鸿富诚",
-      "pct": -10.351,
-      "reason": ""
-    },
-    {
-      "code": "688432",
-      "name": "有研硅",
-      "pct": -10.344,
-      "reason": ""
-    },
-    {
-      "code": "920202",
-      "name": "安达股份",
-      "pct": -10.219,
-      "reason": ""
-    },
-    {
-      "code": "688244",
-      "name": "永信至诚",
-      "pct": -10.125,
-      "reason": ""
-    },
-    {
-      "code": "002285",
-      "name": "世联行",
-      "pct": -10.092,
+      "code": "002487",
+      "name": "大金重工",
+      "pct": -10.0,
       "reason": ""
     },
     {
       "code": "603668",
       "name": "天马科技",
-      "pct": -10.038,
+      "pct": -9.989,
       "reason": ""
     },
     {
-      "code": "600664",
-      "name": "哈药股份",
-      "pct": -10.014,
-      "reason": ""
-    },
-    {
-      "code": "600722",
-      "name": "金牛化工",
-      "pct": -10.012,
-      "reason": ""
-    },
-    {
-      "code": "603002",
-      "name": "宏昌电子",
-      "pct": -10.011,
-      "reason": ""
-    },
-    {
-      "code": "603588",
-      "name": "高能环境",
-      "pct": -10.006,
-      "reason": ""
-    },
-    {
-      "code": "601579",
-      "name": "会稽山",
-      "pct": -10.005,
-      "reason": ""
-    },
-    {
-      "code": "603395",
-      "name": "红四方",
-      "pct": -10.004,
-      "reason": ""
-    },
-    {
-      "code": "605177",
-      "name": "东亚药业",
-      "pct": -10.004,
-      "reason": ""
-    },
-    {
-      "code": "002636",
-      "name": "金安国纪",
-      "pct": -10.004,
-      "reason": ""
-    },
-    {
-      "code": "603186",
-      "name": "华正新材",
-      "pct": -10.002,
-      "reason": ""
-    },
-    {
-      "code": "603021",
-      "name": "*ST华鹏",
-      "pct": -10.0,
-      "reason": ""
-    },
-    {
-      "code": "000056",
-      "name": "*ST皇庭",
-      "pct": -10.0,
-      "reason": ""
-    },
-    {
-      "code": "002717",
-      "name": "*ST岭南",
-      "pct": -10.0,
-      "reason": ""
-    },
-    {
-      "code": "605303",
-      "name": "园林股份",
-      "pct": -9.997,
+      "code": "603230",
+      "name": "内蒙新华",
+      "pct": -9.979,
       "reason": ""
     },
     {
       "code": "001336",
       "name": "楚环科技",
-      "pct": -9.991,
+      "pct": -9.976,
       "reason": ""
     },
     {
-      "code": "002396",
-      "name": "星网锐捷",
-      "pct": -9.99,
+      "code": "002866",
+      "name": "传艺科技",
+      "pct": -9.974,
       "reason": ""
     },
     {
-      "code": "603950",
-      "name": "长源东谷",
-      "pct": -9.988,
+      "code": "600812",
+      "name": "华北制药",
+      "pct": -9.955,
       "reason": ""
     },
     {
-      "code": "603657",
-      "name": "春光科技",
-      "pct": -9.986,
+      "code": "603997",
+      "name": "继峰股份",
+      "pct": -9.915,
       "reason": ""
     },
     {
-      "code": "000678",
-      "name": "襄阳轴承",
-      "pct": -9.984,
-      "reason": ""
-    },
-    {
-      "code": "601086",
-      "name": "国芳集团",
-      "pct": -9.973,
-      "reason": ""
-    },
-    {
-      "code": "605366",
-      "name": "宏柏新材",
-      "pct": -9.96,
-      "reason": ""
-    },
-    {
-      "code": "002413",
-      "name": "雷科防务",
-      "pct": -9.954,
-      "reason": ""
-    },
-    {
-      "code": "002927",
-      "name": "泰永长征",
-      "pct": -9.921,
-      "reason": ""
-    },
-    {
-      "code": "002962",
-      "name": "五方光电",
-      "pct": -9.92,
-      "reason": ""
-    },
-    {
-      "code": "001300",
-      "name": "三柏硕",
-      "pct": -9.892,
+      "code": "000056",
+      "name": "*ST皇庭",
+      "pct": -9.877,
       "reason": ""
     }
   ],
   "broken_list": [],
   "board": {
-    "height": 10,
-    "seal_rate": 64.8,
-    "promote_rate": 24.6,
+    "height": 3,
+    "seal_rate": 77.9,
+    "promote_rate": 17.9,
     "ladder": [
       {
-        "day": 10,
-        "count": 1,
-        "names": [
-          "新华传媒"
-        ]
-      },
-      {
-        "day": 6,
-        "count": 2,
-        "names": [
-          "九阳股份",
-          "时代万恒"
-        ]
-      },
-      {
         "day": 3,
-        "count": 1,
+        "count": 5,
         "names": [
-          "华北制药"
+          "慈文传媒",
+          "新经典",
+          "龙版传媒",
+          "丽人丽妆",
+          "百洋股份"
         ]
       },
       {
         "day": 2,
-        "count": 14,
+        "count": 5,
         "names": [
-          "新经典",
-          "丽人丽妆",
-          "德才股份",
-          "慈文传媒",
-          "龙版传媒",
-          "博纳影业"
+          "东百集团",
+          "农心科技",
+          "醋化股份",
+          "广电网络",
+          "海欣股份"
         ]
       },
       {
         "day": 1,
-        "count": 28,
+        "count": 57,
         "names": [
-          "广电网络",
-          "东百集团",
-          "莱美药业",
-          "海欣股份",
-          "多伦科技",
-          "金冠电气"
+          "荣丰控股",
+          "金奥博",
+          "理工能科",
+          "皇台酒业",
+          "超声电子",
+          "海得控制"
         ]
       }
     ],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 46,
-    "broken": 25,
-    "promote_detail": "1进2: 今日2板14只 / 昨日首板57只"
+    "limit_up_sealed": 67,
+    "broken": 19,
+    "promote_detail": "1进2: 今日2板5只 / 昨日首板28只"
   },
   "status": {
     "indices": "ok",
-    "breadth_em": "unreachable:HTTP Error 502: Bad Gateway",
+    "breadth_em": "ok",
     "limit_up_sina": "ok",
     "sectors": "ok",
-    "concepts": "unreachable:HTTP Error 502: Bad Gateway",
-    "sectors_detail": "unreachable:HTTP Error 502: Bad Gateway",
+    "concepts": "ok",
     "board_akshare": "ok",
     "limit_up": "ok",
     "limit_down": "ok"
