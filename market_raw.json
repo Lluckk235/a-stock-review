@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-15",
-  "weekday": "Thursday",
+  "date": "2026-10-16",
+  "weekday": "Friday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,378 +9,219 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3707.48,
-      "pct": -1.59
+      "price": 3716.28,
+      "pct": 0.24
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 2783.17,
-      "pct": -2.92
+      "price": 2772.38,
+      "pct": -0.39
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1359.52,
-      "pct": -1.5
+      "price": 1358.65,
+      "pct": -0.06
     }
   ],
   "breadth": {
-    "up": 511,
-    "down": 6205,
-    "limit_up_sina": 44,
-    "limit_up": 36,
-    "limit_up_source": "东财涨停池",
-    "broken": 7,
-    "limit_down": 42
+    "up": 3893,
+    "down": 2685,
+    "limit_up_sina": 84,
+    "limit_up": 84,
+    "limit_up_source": "新浪推导",
+    "limit_down": 27
   },
-  "sectors_up": [
-    {
-      "code": "BK1452",
-      "name": "卫浴电器",
-      "pct": 4.57,
-      "inflow": 1.54
-    },
-    {
-      "code": "BK1347",
-      "name": "纺织鞋类制造",
-      "pct": 3.38,
-      "inflow": -0.03
-    },
-    {
-      "code": "BK1289",
-      "name": "大众出版",
-      "pct": 1.37,
-      "inflow": 3.63
-    },
-    {
-      "code": "BK1587",
-      "name": "电信运营商",
-      "pct": 1.11,
-      "inflow": 1.02
-    },
-    {
-      "code": "BK1575",
-      "name": "白酒Ⅲ",
-      "pct": 1.03,
-      "inflow": 7.76
-    }
-  ],
+  "sectors_up": [],
   "sectors_down": [],
   "concepts_up": [],
   "inflow_top5": [],
   "limit_up_list": [],
   "limit_down_list": [
     {
-      "code": "301053",
-      "name": "远信工业",
-      "pct": -20.013,
+      "code": "920162",
+      "name": "莫森泰克",
+      "pct": -29.972,
       "reason": ""
     },
     {
-      "code": "300497",
-      "name": "富祥股份",
-      "pct": -14.886,
+      "code": "301569",
+      "name": "C联亚",
+      "pct": -28.331,
       "reason": ""
     },
     {
-      "code": "301030",
-      "name": "*ST仕净",
-      "pct": -13.91,
+      "code": "301345",
+      "name": "涛涛车业",
+      "pct": -18.828,
+      "reason": ""
+    },
+    {
+      "code": "300852",
+      "name": "四会富仕",
+      "pct": -14.507,
+      "reason": ""
+    },
+    {
+      "code": "300301",
+      "name": "ST长方",
+      "pct": -14.464,
+      "reason": ""
+    },
+    {
+      "code": "301513",
+      "name": "尚水智能",
+      "pct": -14.238,
+      "reason": ""
+    },
+    {
+      "code": "300981",
+      "name": "中红医疗",
+      "pct": -14.202,
+      "reason": ""
+    },
+    {
+      "code": "688305",
+      "name": "科德数控",
+      "pct": -13.772,
+      "reason": ""
+    },
+    {
+      "code": "920045",
+      "name": "蘅东光",
+      "pct": -11.777,
+      "reason": ""
+    },
+    {
+      "code": "301041",
+      "name": "金百泽",
+      "pct": -11.593,
+      "reason": ""
+    },
+    {
+      "code": "301234",
+      "name": "五洲医疗",
+      "pct": -11.277,
+      "reason": ""
+    },
+    {
+      "code": "300964",
+      "name": "本川智能",
+      "pct": -10.791,
       "reason": ""
     },
     {
       "code": "920438",
       "name": "戈碧迦",
-      "pct": -12.695,
+      "pct": -10.62,
       "reason": ""
     },
     {
-      "code": "688345",
-      "name": "博力威",
-      "pct": -12.685,
+      "code": "301176",
+      "name": "逸豪新材",
+      "pct": -10.59,
       "reason": ""
     },
     {
-      "code": "300951",
-      "name": "博硕科技",
-      "pct": -12.227,
-      "reason": ""
-    },
-    {
-      "code": "301265",
-      "name": "华新科技",
-      "pct": -12.202,
-      "reason": ""
-    },
-    {
-      "code": "301218",
-      "name": "华是科技",
-      "pct": -12.094,
-      "reason": ""
-    },
-    {
-      "code": "300107",
-      "name": "建新股份",
-      "pct": -11.973,
-      "reason": ""
-    },
-    {
-      "code": "688121",
-      "name": "*ST卓然",
-      "pct": -10.989,
-      "reason": ""
-    },
-    {
-      "code": "300010",
-      "name": "ST豆神",
-      "pct": -10.421,
-      "reason": ""
-    },
-    {
-      "code": "300489",
-      "name": "光智科技",
-      "pct": -10.345,
-      "reason": ""
-    },
-    {
-      "code": "301010",
-      "name": "晶雪节能",
-      "pct": -10.277,
-      "reason": ""
-    },
-    {
-      "code": "300522",
-      "name": "世名科技",
-      "pct": -10.18,
-      "reason": ""
-    },
-    {
-      "code": "002647",
-      "name": "仁东控股",
-      "pct": -10.041,
-      "reason": ""
-    },
-    {
-      "code": "601118",
-      "name": "海南橡胶",
-      "pct": -10.015,
-      "reason": ""
-    },
-    {
-      "code": "601872",
-      "name": "招商轮船",
-      "pct": -10.009,
-      "reason": ""
-    },
-    {
-      "code": "002741",
-      "name": "光华科技",
-      "pct": -10.009,
+      "code": "600847",
+      "name": "万里股份",
+      "pct": -10.028,
       "reason": ""
     },
     {
       "code": "600693",
       "name": "东百集团",
-      "pct": -10.008,
+      "pct": -10.027,
       "reason": ""
     },
     {
-      "code": "001380",
-      "name": "华纬科技",
-      "pct": -10.006,
+      "code": "600671",
+      "name": "天目药业",
+      "pct": -10.018,
       "reason": ""
     },
     {
-      "code": "001359",
-      "name": "平安电工",
-      "pct": -10.001,
+      "code": "001318",
+      "name": "阳光乳业",
+      "pct": -10.018,
       "reason": ""
     },
     {
-      "code": "600097",
-      "name": "开创国际",
+      "code": "002667",
+      "name": "*ST威领",
+      "pct": -10.003,
+      "reason": ""
+    },
+    {
+      "code": "001225",
+      "name": "和泰机电",
       "pct": -10.0,
       "reason": ""
     },
     {
-      "code": "600792",
-      "name": "云煤能源",
-      "pct": -10.0,
+      "code": "603893",
+      "name": "瑞芯微",
+      "pct": -9.995,
       "reason": ""
     },
     {
-      "code": "603968",
-      "name": "醋化股份",
-      "pct": -10.0,
+      "code": "603258",
+      "name": "电魂网络",
+      "pct": -9.994,
       "reason": ""
     },
     {
-      "code": "000048",
-      "name": "京基智农",
-      "pct": -10.0,
+      "code": "002552",
+      "name": "宝鼎科技",
+      "pct": -9.994,
       "reason": ""
     },
     {
-      "code": "001288",
-      "name": "运机集团",
-      "pct": -10.0,
+      "code": "002134",
+      "name": "天津普林",
+      "pct": -9.984,
       "reason": ""
     },
     {
-      "code": "002917",
-      "name": "金奥博",
-      "pct": -10.0,
+      "code": "002696",
+      "name": "百洋股份",
+      "pct": -9.972,
       "reason": ""
     },
     {
-      "code": "002813",
-      "name": "路畅科技",
-      "pct": -9.993,
-      "reason": ""
-    },
-    {
-      "code": "603162",
-      "name": "海通发展",
-      "pct": -9.992,
-      "reason": ""
-    },
-    {
-      "code": "000668",
-      "name": "荣丰控股",
-      "pct": -9.991,
-      "reason": ""
-    },
-    {
-      "code": "603665",
-      "name": "康隆达",
-      "pct": -9.988,
-      "reason": ""
-    },
-    {
-      "code": "605196",
-      "name": "华通线缆",
-      "pct": -9.987,
+      "code": "000626",
+      "name": "远大控股",
+      "pct": -9.945,
       "reason": ""
     },
     {
       "code": "001231",
       "name": "农心科技",
-      "pct": -9.98,
-      "reason": ""
-    },
-    {
-      "code": "600026",
-      "name": "中远海能",
-      "pct": -9.978,
-      "reason": ""
-    },
-    {
-      "code": "601975",
-      "name": "招商南油",
-      "pct": -9.978,
-      "reason": ""
-    },
-    {
-      "code": "603344",
-      "name": "星德胜",
-      "pct": -9.977,
-      "reason": ""
-    },
-    {
-      "code": "603668",
-      "name": "天马科技",
-      "pct": -9.974,
-      "reason": ""
-    },
-    {
-      "code": "002062",
-      "name": "宏润建设",
-      "pct": -9.955,
-      "reason": ""
-    },
-    {
-      "code": "600202",
-      "name": "哈空调",
-      "pct": -9.919,
-      "reason": ""
-    },
-    {
-      "code": "601188",
-      "name": "龙江交通",
-      "pct": -9.915,
-      "reason": ""
-    },
-    {
-      "code": "002692",
-      "name": "远程股份",
-      "pct": -9.91,
-      "reason": ""
-    },
-    {
-      "code": "600207",
-      "name": "安彩高科",
-      "pct": -9.811,
+      "pct": -9.86,
       "reason": ""
     }
   ],
   "broken_list": [],
   "board": {
-    "height": 5,
-    "seal_rate": 83.7,
-    "promote_rate": 9.5,
-    "ladder": [
-      {
-        "day": 5,
-        "count": 2,
-        "names": [
-          "百洋股份",
-          "慈文传媒"
-        ]
-      },
-      {
-        "day": 3,
-        "count": 2,
-        "names": [
-          "冰山冷热",
-          "阳光乳业"
-        ]
-      },
-      {
-        "day": 2,
-        "count": 2,
-        "names": [
-          "富春染织",
-          "新华文轩"
-        ]
-      },
-      {
-        "day": 1,
-        "count": 30,
-        "names": [
-          "崇达技术",
-          "远大控股",
-          "读者传媒",
-          "和泰机电",
-          "金禄电子",
-          "湖南发展"
-        ]
-      }
-    ],
+    "height": null,
+    "seal_rate": null,
+    "promote_rate": null,
+    "ladder": [],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 36,
-    "broken": 7,
-    "promote_detail": "1进2: 今日2板2只 / 昨日首板21只"
+    "limit_up_sealed": null,
+    "broken": null,
+    "promote_detail": ""
   },
   "status": {
     "indices": "ok",
     "breadth_em": "ok",
     "limit_up_sina": "ok",
-    "sectors": "ok",
-    "concepts": "unreachable:HTTP Error 502: Bad Gateway",
+    "sectors": "unreachable:HTTP Error 502: Bad Gateway",
+    "concepts": "unreachable:<urlopen error _ssl.c:1015: The handshake operation timed out>",
     "sectors_detail": "unreachable:HTTP Error 502: Bad Gateway",
-    "board_akshare": "ok",
-    "limit_up": "ok",
+    "board_akshare": "涨停池ERR:HTTPSConnectionPool(host='push2ex.eastmoney.com', port=443): Read timed out. (read timeout=None)",
+    "limit_up": "sina_fallback",
     "limit_down": "ok"
   }
 }
