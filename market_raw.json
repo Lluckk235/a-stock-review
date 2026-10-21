@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-20",
-  "weekday": "Tuesday",
+  "date": "2026-10-21",
+  "weekday": "Wednesday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,243 +9,211 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3735.37,
-      "pct": 0.12
+      "price": 3713.03,
+      "pct": -0.6
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 2739.2,
-      "pct": -0.26
+      "price": 2694.71,
+      "pct": -1.62
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1342.42,
-      "pct": 1.0
+      "price": 1343.28,
+      "pct": 0.06
     }
   ],
   "breadth": {
-    "up": 4659,
-    "down": 1937,
-    "limit_up_sina": 97,
-    "limit_up": 54,
+    "up": 2505,
+    "down": 3980,
+    "limit_up_sina": 59,
+    "limit_up": 50,
     "limit_up_source": "东财涨停池",
-    "broken": 29,
-    "limit_down": 15
+    "broken": 19,
+    "limit_down": 10
   },
   "sectors_up": [
     {
+      "code": "BK1292",
+      "name": "广告媒体",
+      "pct": 6.85,
+      "inflow": -0.67
+    },
+    {
       "code": "BK1295",
       "name": "其他数字媒体",
-      "pct": 13.62,
-      "inflow": 3.83
+      "pct": 6.61,
+      "inflow": -1.79
     },
     {
-      "code": "BK1602",
-      "name": "诊断服务",
-      "pct": 9.53,
-      "inflow": 3.18
+      "code": "BK1512",
+      "name": "生猪养殖",
+      "pct": 3.79,
+      "inflow": 1.88
     },
     {
-      "code": "BK1305",
-      "name": "燃料电池",
-      "pct": 6.08,
-      "inflow": 0.02
+      "code": "BK1291",
+      "name": "电视广播Ⅲ",
+      "pct": 3.26,
+      "inflow": 0.57
     },
     {
-      "code": "BK1500",
-      "name": "医美耗材",
-      "pct": 5.87,
-      "inflow": 1.16
-    },
-    {
-      "code": "BK1524",
-      "name": "汽车综合服务",
-      "pct": 4.68,
-      "inflow": 0.61
+      "code": "BK1219",
+      "name": "电视广播Ⅱ",
+      "pct": 3.26,
+      "inflow": 0.57
     }
   ],
   "sectors_down": [],
   "concepts_up": [
     {
-      "code": "BK0915",
-      "name": "WiFi",
-      "pct": 4.18,
-      "inflow": 5.87
+      "code": "BK1630",
+      "name": "昨日首板",
+      "pct": 3.25,
+      "inflow": -5.25
     },
     {
-      "code": "BK1141",
-      "name": "混合现实",
-      "pct": 4.02,
-      "inflow": 15.06
+      "code": "BK1054",
+      "name": "DRG/DIP",
+      "pct": 3.25,
+      "inflow": 0.18
     },
     {
-      "code": "BK1127",
-      "name": "AI芯片",
-      "pct": 3.93,
-      "inflow": 7.03
+      "code": "BK1050",
+      "name": "昨日涨停_含一字",
+      "pct": 3.17,
+      "inflow": -11.17
     },
     {
-      "code": "BK0998",
-      "name": "机器视觉",
-      "pct": 3.93,
-      "inflow": 12.96
+      "code": "BK1717",
+      "name": "题材股",
+      "pct": 2.86,
+      "inflow": -11.24
     },
     {
-      "code": "BK1132",
-      "name": "MLOps概念",
-      "pct": 3.92,
-      "inflow": -0.73
+      "code": "BK0815",
+      "name": "昨日涨停",
+      "pct": 2.8,
+      "inflow": -11.9
     }
   ],
   "inflow_top5": [],
   "limit_up_list": [],
   "limit_down_list": [
     {
-      "code": "300716",
-      "name": "*ST泉为",
-      "pct": -19.241,
-      "reason": ""
-    },
-    {
-      "code": "301190",
-      "name": "善水科技",
-      "pct": -18.941,
-      "reason": ""
-    },
-    {
-      "code": "300006",
-      "name": "莱美药业",
-      "pct": -15.485,
-      "reason": ""
-    },
-    {
       "code": "688121",
       "name": "*ST卓然",
-      "pct": -15.464,
+      "pct": -18.293,
       "reason": ""
     },
     {
-      "code": "300798",
-      "name": "锦鸡股份",
-      "pct": -14.13,
+      "code": "688228",
+      "name": "开普云",
+      "pct": -14.541,
       "reason": ""
     },
     {
-      "code": "301660",
-      "name": "粤芯半导",
-      "pct": -13.526,
+      "code": "300750",
+      "name": "宁德时代",
+      "pct": -12.035,
       "reason": ""
     },
     {
-      "code": "301716",
-      "name": "鸿富诚",
-      "pct": -12.151,
+      "code": "301030",
+      "name": "*ST仕净",
+      "pct": -10.213,
       "reason": ""
     },
     {
-      "code": "300300",
-      "name": "海峡创新",
-      "pct": -11.588,
+      "code": "000712",
+      "name": "锦龙股份",
+      "pct": -10.019,
       "reason": ""
     },
     {
-      "code": "002679",
-      "name": "福建金森",
-      "pct": -10.026,
-      "reason": ""
-    },
-    {
-      "code": "000993",
-      "name": "闽东电力",
-      "pct": -10.012,
-      "reason": ""
-    },
-    {
-      "code": "002028",
-      "name": "思源电气",
+      "code": "603200",
+      "name": "上海洗霸",
       "pct": -10.0,
       "reason": ""
     },
     {
-      "code": "002245",
-      "name": "蔚蓝锂芯",
+      "code": "603980",
+      "name": "吉华集团",
       "pct": -10.0,
       "reason": ""
     },
     {
-      "code": "603105",
-      "name": "芯能科技",
-      "pct": -9.951,
+      "code": "002847",
+      "name": "盐津铺子",
+      "pct": -10.0,
       "reason": ""
     },
     {
-      "code": "603999",
-      "name": "读者传媒",
-      "pct": -9.947,
+      "code": "600241",
+      "name": "时代万恒",
+      "pct": -9.985,
       "reason": ""
     },
     {
-      "code": "000056",
-      "name": "*ST皇庭",
-      "pct": -9.914,
+      "code": "001301",
+      "name": "尚太科技",
+      "pct": -9.844,
       "reason": ""
     }
   ],
   "broken_list": [],
   "board": {
     "height": 4,
-    "seal_rate": 65.1,
-    "promote_rate": 22.9,
+    "seal_rate": 72.5,
+    "promote_rate": 30.0,
     "ladder": [
       {
         "day": 4,
-        "count": 1,
+        "count": 3,
         "names": [
-          "吉大正元"
+          "海洋王",
+          "东安动力",
+          "大业股份"
         ]
       },
       {
         "day": 3,
-        "count": 5,
+        "count": 1,
         "names": [
-          "东安动力",
-          "大业股份",
-          "长春一东",
-          "海洋王",
-          "京城股份"
+          "润建股份"
         ]
       },
       {
         "day": 2,
-        "count": 8,
+        "count": 12,
         "names": [
-          "慕思股份",
-          "福莱新材",
-          "海正药业",
-          "宁波东力",
-          "科森科技",
-          "凡拓数创"
+          "日海智能",
+          "泰尔股份",
+          "同为股份",
+          "三峡新材",
+          "星光股份",
+          "永达股份"
         ]
       },
       {
         "day": 1,
-        "count": 40,
+        "count": 34,
         "names": [
-          "同为股份",
-          "昂立教育",
-          "三峡新材",
-          "富春环保",
-          "粤 传 媒",
-          "星光股份"
+          "苏州龙杰",
+          "海量数据",
+          "出版传媒",
+          "顺灏股份",
+          "东方海洋",
+          "兆讯传媒"
         ]
       }
     ],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 54,
-    "broken": 29,
-    "promote_detail": "1进2: 今日2板8只 / 昨日首板35只"
+    "limit_up_sealed": 50,
+    "broken": 19,
+    "promote_detail": "1进2: 今日2板12只 / 昨日首板40只"
   },
   "status": {
     "indices": "ok",
