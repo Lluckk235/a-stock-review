@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-06",
-  "weekday": "Friday",
+  "date": "2026-11-09",
+  "weekday": "Monday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,360 +9,230 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3649.18,
-      "pct": -1.1
+      "price": 3660.79,
+      "pct": 0.32
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 2465.23,
-      "pct": -3.96
+      "price": 2458.56,
+      "pct": -0.27
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1253.2,
-      "pct": -2.6
+      "price": 1256.96,
+      "pct": 0.3
     }
   ],
   "breadth": {
-    "up": 859,
-    "down": 5803,
-    "limit_up_sina": 43,
-    "limit_up": 32,
+    "up": 2657,
+    "down": 3889,
+    "limit_up_sina": 75,
+    "limit_up": 54,
     "limit_up_source": "东财涨停池",
-    "broken": 14,
-    "limit_down": 25
+    "broken": 44,
+    "limit_down": 6
   },
   "sectors_up": [
     {
-      "code": "BK1296",
-      "name": "视频媒体",
-      "pct": 6.25,
-      "inflow": -0.82
+      "code": "BK1492",
+      "name": "焦炭Ⅲ",
+      "pct": 5.39,
+      "inflow": 1.94
     },
     {
-      "code": "BK1518",
-      "name": "种子",
-      "pct": 4.64,
-      "inflow": 2.84
+      "code": "BK1249",
+      "name": "焦炭Ⅱ",
+      "pct": 5.39,
+      "inflow": 1.94
     },
     {
       "code": "BK1452",
       "name": "卫浴电器",
-      "pct": 3.46,
-      "inflow": 1.57
+      "pct": 5.1,
+      "inflow": 0.59
     },
     {
-      "code": "BK1510",
-      "name": "其他养殖",
-      "pct": 3.18,
-      "inflow": 0.3
+      "code": "BK1524",
+      "name": "汽车综合服务",
+      "pct": 4.15,
+      "inflow": 0.44
     },
     {
-      "code": "BK1587",
-      "name": "电信运营商",
-      "pct": 2.87,
-      "inflow": 4.05
+      "code": "BK0437",
+      "name": "煤炭",
+      "pct": 3.47,
+      "inflow": 9.34
     }
   ],
   "sectors_down": [
     {
-      "code": "BK1340",
-      "name": "印制电路板",
-      "pct": -5.86,
-      "inflow": -49.56
+      "code": "BK1556",
+      "name": "教育运营及其他",
+      "pct": -6.67,
+      "inflow": -1.08
     },
     {
-      "code": "BK0459",
-      "name": "元件",
-      "pct": -5.13,
-      "inflow": -54.37
+      "code": "BK1507",
+      "name": "宠物食品",
+      "pct": -3.48,
+      "inflow": -0.32
     },
     {
-      "code": "BK1592",
-      "name": "通信线缆及配套",
-      "pct": -4.78,
-      "inflow": -13.9
+      "code": "BK1434",
+      "name": "钾肥",
+      "pct": -2.98,
+      "inflow": 0.21
     },
     {
-      "code": "BK1600",
-      "name": "医疗研发外包",
-      "pct": -4.67,
-      "inflow": -15.3
+      "code": "BK1320",
+      "name": "逆变器",
+      "pct": -2.94,
+      "inflow": -10.21
     },
     {
-      "code": "BK1462",
-      "name": "玻纤制造",
-      "pct": -4.65,
-      "inflow": -6.75
+      "code": "BK1621",
+      "name": "锂",
+      "pct": -2.93,
+      "inflow": -3.38
     }
   ],
   "concepts_up": [
     {
-      "code": "BK1645",
-      "name": "昨日打二板以上表现",
-      "pct": 10.03,
-      "inflow": 0.6
+      "code": "BK1630",
+      "name": "昨日首板",
+      "pct": 5.29,
+      "inflow": 0.29
     },
     {
-      "code": "BK1051",
-      "name": "昨日连板_含一字",
-      "pct": 2.11,
-      "inflow": -5.47
+      "code": "BK0815",
+      "name": "昨日涨停",
+      "pct": 4.54,
+      "inflow": -12.76
     },
     {
-      "code": "BK0907",
-      "name": "转基因",
-      "pct": 1.54,
-      "inflow": 2.76
+      "code": "BK1050",
+      "name": "昨日涨停_含一字",
+      "pct": 3.95,
+      "inflow": -14.99
     },
     {
-      "code": "BK0816",
-      "name": "昨日连板",
-      "pct": 1.39,
-      "inflow": -5.89
+      "code": "BK0964",
+      "name": "6G概念",
+      "pct": 2.65,
+      "inflow": 16.84
     },
     {
-      "code": "BK1086",
-      "name": "粮食概念",
-      "pct": 1.32,
-      "inflow": 3.17
+      "code": "BK1637",
+      "name": "东方财富热股",
+      "pct": 2.59,
+      "inflow": 19.02
     }
   ],
   "inflow_top5": [
     {
-      "name": "公用事业",
-      "inflow": 9.59
+      "name": "电子",
+      "inflow": 93.39
     },
     {
-      "name": "电力",
-      "inflow": 9.4
+      "name": "元件",
+      "inflow": 38.42
     },
     {
-      "name": "银行",
-      "inflow": 8.53
+      "name": "印制电路板",
+      "inflow": 37.63
     },
     {
-      "name": "银行Ⅱ",
-      "inflow": 8.53
+      "name": "通信设备",
+      "inflow": 37.34
     },
     {
-      "name": "半导体设备",
-      "inflow": 7.4
+      "name": "通信",
+      "inflow": 32.46
     }
   ],
   "limit_up_list": [],
   "limit_down_list": [
     {
-      "code": "001381",
-      "name": "C皇冠",
-      "pct": -17.11,
+      "code": "920085",
+      "name": "森峰激光",
+      "pct": -18.726,
       "reason": ""
     },
     {
-      "code": "301716",
-      "name": "鸿富诚",
-      "pct": -13.659,
+      "code": "300010",
+      "name": "ST豆神",
+      "pct": -12.615,
       "reason": ""
     },
     {
-      "code": "688137",
-      "name": "近岸蛋白",
-      "pct": -13.288,
+      "code": "301096",
+      "name": "百诚医药",
+      "pct": -11.274,
       "reason": ""
     },
     {
-      "code": "301569",
-      "name": "联亚药业",
-      "pct": -11.565,
+      "code": "920007",
+      "name": "酉立智能",
+      "pct": -11.103,
       "reason": ""
     },
     {
-      "code": "688766",
-      "name": "普冉股份",
-      "pct": -10.62,
+      "code": "000520",
+      "name": "凤凰航运",
+      "pct": -10.086,
       "reason": ""
     },
     {
-      "code": "920045",
-      "name": "蘅东光",
-      "pct": -10.379,
-      "reason": ""
-    },
-    {
-      "code": "688004",
-      "name": "博汇科技",
-      "pct": -10.293,
-      "reason": ""
-    },
-    {
-      "code": "000679",
-      "name": "大连友谊",
-      "pct": -10.046,
-      "reason": ""
-    },
-    {
-      "code": "603278",
-      "name": "大业股份",
-      "pct": -10.013,
-      "reason": ""
-    },
-    {
-      "code": "002827",
-      "name": "高争民爆",
-      "pct": -10.004,
-      "reason": ""
-    },
-    {
-      "code": "002353",
-      "name": "杰瑞股份",
-      "pct": -10.003,
-      "reason": ""
-    },
-    {
-      "code": "003033",
-      "name": "征和工业",
-      "pct": -10.001,
-      "reason": ""
-    },
-    {
-      "code": "603578",
-      "name": "三星新材",
-      "pct": -10.0,
-      "reason": ""
-    },
-    {
-      "code": "605058",
-      "name": "澳弘电子",
-      "pct": -10.0,
-      "reason": ""
-    },
-    {
-      "code": "002384",
-      "name": "东山精密",
-      "pct": -10.0,
-      "reason": ""
-    },
-    {
-      "code": "603083",
-      "name": "剑桥科技",
-      "pct": -9.996,
-      "reason": ""
-    },
-    {
-      "code": "001225",
-      "name": "和泰机电",
-      "pct": -9.995,
-      "reason": ""
-    },
-    {
-      "code": "600838",
-      "name": "上海九百",
-      "pct": -9.991,
-      "reason": ""
-    },
-    {
-      "code": "605100",
-      "name": "华丰股份",
-      "pct": -9.988,
-      "reason": ""
-    },
-    {
-      "code": "000678",
-      "name": "襄阳轴承",
-      "pct": -9.98,
-      "reason": ""
-    },
-    {
-      "code": "301502",
-      "name": "华阳智能",
-      "pct": -9.937,
-      "reason": ""
-    },
-    {
-      "code": "600281",
-      "name": "华阳新材",
-      "pct": -9.928,
-      "reason": ""
-    },
-    {
-      "code": "600892",
-      "name": "大晟文化",
-      "pct": -9.922,
-      "reason": ""
-    },
-    {
-      "code": "300508",
-      "name": "维宏股份",
-      "pct": -9.863,
-      "reason": ""
-    },
-    {
-      "code": "000017",
-      "name": "深中华A",
-      "pct": -9.829,
+      "code": "002667",
+      "name": "*ST威领",
+      "pct": -10.008,
       "reason": ""
     }
   ],
   "broken_list": [],
   "board": {
-    "height": 5,
-    "seal_rate": 69.6,
-    "promote_rate": 6.3,
+    "height": 6,
+    "seal_rate": 55.1,
+    "promote_rate": 38.1,
     "ladder": [
       {
-        "day": 5,
-        "count": 2,
+        "day": 6,
+        "count": 1,
         "names": [
-          "闽发铝业",
-          "浙文影业"
-        ]
-      },
-      {
-        "day": 4,
-        "count": 2,
-        "names": [
-          "永臻股份",
-          "鲁阳节能"
-        ]
-      },
-      {
-        "day": 3,
-        "count": 3,
-        "names": [
-          "春光科技",
-          "贝特利",
-          "新亚制程"
+          "闽发铝业"
         ]
       },
       {
         "day": 2,
-        "count": 4,
+        "count": 8,
         "names": [
-          "南侨食品",
-          "阳光照明",
-          "东方海洋",
-          "润建股份"
+          "东方新能",
+          "日出东方",
+          "东方嘉盛",
+          "龙江交通",
+          "大东方",
+          "润贝航科"
         ]
       },
       {
         "day": 1,
-        "count": 21,
+        "count": 45,
         "names": [
-          "城市传媒",
-          "新能股份",
-          "安彩高科",
-          "立新能源",
-          "万向德农",
-          "龙江交通"
+          "保利联合",
+          "西部材料",
+          "顺灏股份",
+          "苏州科达",
+          "冰山冷热",
+          "华培动力"
         ]
       }
     ],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 32,
-    "broken": 14,
-    "promote_detail": "1进2: 今日2板4只 / 昨日首板63只"
+    "limit_up_sealed": 54,
+    "broken": 44,
+    "promote_detail": "1进2: 今日2板8只 / 昨日首板21只"
   },
   "status": {
     "indices": "ok",
