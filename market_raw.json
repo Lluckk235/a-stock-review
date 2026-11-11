@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-10",
-  "weekday": "Tuesday",
+  "date": "2026-11-11",
+  "weekday": "Wednesday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,217 +9,167 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3663.72,
-      "pct": 0.08
+      "price": 3680.64,
+      "pct": 0.46
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 2494.4,
-      "pct": 1.46
+      "price": 2572.07,
+      "pct": 3.11
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1265.02,
-      "pct": 0.64
+      "price": 1300.38,
+      "pct": 2.8
     }
   ],
   "breadth": {
-    "up": 5324,
-    "down": 1258,
-    "limit_up_sina": 134,
-    "limit_up": 93,
+    "up": 4511,
+    "down": 2002,
+    "limit_up_sina": 114,
+    "limit_up": 85,
     "limit_up_source": "东财涨停池",
     "broken": 19,
-    "limit_down": 1
+    "limit_down": 6
   },
   "sectors_up": [
     {
       "code": "BK1295",
       "name": "其他数字媒体",
-      "pct": 9.8,
-      "inflow": 2.23
+      "pct": 7.27,
+      "inflow": 2.45
     },
     {
-      "code": "BK1298",
-      "name": "文字媒体",
-      "pct": 9.03,
-      "inflow": 10.63
-    },
-    {
-      "code": "BK1299",
-      "name": "影视动漫制作",
-      "pct": 8.03,
-      "inflow": 14.22
-    },
-    {
-      "code": "BK1222",
-      "name": "影视院线",
-      "pct": 7.05,
-      "inflow": 14.65
-    },
-    {
-      "code": "BK1454",
-      "name": "其他黑色家电",
-      "pct": 6.42,
-      "inflow": 1.08
-    }
-  ],
-  "sectors_down": [
-    {
-      "code": "BK1434",
-      "name": "钾肥",
-      "pct": -2.04,
-      "inflow": 0.72
-    },
-    {
-      "code": "BK1427",
-      "name": "民爆制品",
-      "pct": -2.02,
-      "inflow": -3.39
-    },
-    {
-      "code": "BK1493",
-      "name": "动力煤",
-      "pct": -1.8,
-      "inflow": -5.09
-    },
-    {
-      "code": "BK1500",
-      "name": "医美耗材",
-      "pct": -1.72,
-      "inflow": -0.55
-    },
-    {
-      "code": "BK1250",
-      "name": "煤炭开采",
-      "pct": -1.56,
-      "inflow": -5.65
-    }
-  ],
-  "concepts_up": [
-    {
-      "code": "BK1675",
-      "name": "历史新高",
-      "pct": 6.73,
-      "inflow": 1.82
-    },
-    {
-      "code": "BK1766",
-      "name": "智能音箱",
-      "pct": 6.11,
-      "inflow": 13.49
-    },
-    {
-      "code": "BK1051",
-      "name": "昨日连板_含一字",
-      "pct": 5.95,
-      "inflow": -7.51
-    },
-    {
-      "code": "BK1645",
-      "name": "昨日打二板以上表现",
-      "pct": 5.72,
-      "inflow": -3.59
-    },
-    {
-      "code": "BK1125",
-      "name": "电子后视镜",
-      "pct": 5.6,
-      "inflow": 5.68
-    }
-  ],
-  "inflow_top5": [
-    {
-      "name": "电子",
-      "inflow": 92.02
-    },
-    {
-      "name": "传媒",
-      "inflow": 46.88
-    },
-    {
-      "name": "半导体",
-      "inflow": 40.62
-    },
-    {
+      "code": "BK1591",
       "name": "通信网络设备及器件",
-      "inflow": 35.86
+      "pct": 7.19,
+      "inflow": 104.75
     },
     {
-      "name": "机械设备",
-      "inflow": 34.43
+      "code": "BK1592",
+      "name": "通信线缆及配套",
+      "pct": 6.04,
+      "inflow": 21.77
+    },
+    {
+      "code": "BK1340",
+      "name": "印制电路板",
+      "pct": 5.76,
+      "inflow": 72.14
+    },
+    {
+      "code": "BK0459",
+      "name": "元件",
+      "pct": 4.9,
+      "inflow": 81.79
     }
   ],
+  "sectors_down": [],
+  "concepts_up": [],
+  "inflow_top5": [],
   "limit_up_list": [],
   "limit_down_list": [
     {
-      "code": "002246",
-      "name": "北化股份",
-      "pct": -9.944,
+      "code": "300029",
+      "name": "天龙退",
+      "pct": -14.286,
+      "reason": ""
+    },
+    {
+      "code": "688199",
+      "name": "久日新材",
+      "pct": -10.465,
+      "reason": ""
+    },
+    {
+      "code": "002726",
+      "name": "ST龙大",
+      "pct": -10.215,
+      "reason": ""
+    },
+    {
+      "code": "001219",
+      "name": "青岛食品",
+      "pct": -9.992,
+      "reason": ""
+    },
+    {
+      "code": "000632",
+      "name": "ST三木",
+      "pct": -9.901,
+      "reason": ""
+    },
+    {
+      "code": "300751",
+      "name": "迈为股份",
+      "pct": -9.832,
       "reason": ""
     }
   ],
   "broken_list": [],
   "board": {
-    "height": 7,
-    "seal_rate": 83.0,
-    "promote_rate": 32.6,
+    "height": 4,
+    "seal_rate": 81.7,
+    "promote_rate": 16.4,
     "ladder": [
       {
-        "day": 7,
-        "count": 1,
+        "day": 4,
+        "count": 2,
         "names": [
-          "闽发铝业"
+          "大东方",
+          "日出东方"
         ]
       },
       {
         "day": 3,
-        "count": 4,
+        "count": 5,
         "names": [
-          "东方新能",
-          "日出东方",
-          "龙江交通",
-          "大东方"
+          "亚玛顿",
+          "文投控股",
+          "锋龙股份",
+          "光洋股份",
+          "东方环宇"
         ]
       },
       {
         "day": 2,
-        "count": 15,
+        "count": 12,
         "names": [
-          "亚玛顿",
-          "泰尔股份",
-          "光洋股份",
-          "冰山冷热",
-          "文投控股",
-          "锋龙股份"
+          "常铝股份",
+          "达 意 隆",
+          "瀛通通讯",
+          "惠发食品",
+          "日海智能",
+          "凯撒文化"
         ]
       },
       {
         "day": 1,
-        "count": 73,
+        "count": 66,
         "names": [
-          "阳光照明",
-          "新炬网络",
-          "亿嘉和",
-          "福莱新材",
-          "通力科技",
-          "凯众股份"
+          "星光股份",
+          "金辰股份",
+          "金浦钛业",
+          "中重科技",
+          "凯盛新能",
+          "海源复材"
         ]
       }
     ],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 93,
+    "limit_up_sealed": 85,
     "broken": 19,
-    "promote_detail": "1进2: 今日2板15只 / 昨日首板46只"
+    "promote_detail": "1进2: 今日2板12只 / 昨日首板73只"
   },
   "status": {
     "indices": "ok",
     "breadth_em": "ok",
     "limit_up_sina": "ok",
     "sectors": "ok",
-    "concepts": "ok",
+    "concepts": "unreachable:HTTP Error 502: Bad Gateway",
+    "sectors_detail": "unreachable:HTTP Error 502: Bad Gateway",
     "board_akshare": "ok",
     "limit_up": "ok",
     "limit_down": "ok"
