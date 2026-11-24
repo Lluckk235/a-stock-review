@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-23",
-  "weekday": "Monday",
+  "date": "2026-11-24",
+  "weekday": "Tuesday",
   "gate": {
     "pass": true,
     "reason": ""
@@ -9,136 +9,265 @@
     {
       "code": "sh000001",
       "name": "上证指数",
-      "price": 3538.95,
-      "pct": 0.15
+      "price": 3548.37,
+      "pct": 0.27
     },
     {
       "code": "sz399006",
       "name": "创业板指",
-      "price": 2280.2,
-      "pct": 3.08
+      "price": 2278.99,
+      "pct": -0.05
     },
     {
       "code": "sh000688",
       "name": "科创50",
-      "price": 1227.89,
-      "pct": -0.26
+      "price": 1250.09,
+      "pct": 1.81
     }
   ],
   "breadth": {
-    "limit_up_sina": 260,
-    "limit_up": 146,
+    "up": 2477,
+    "down": 4128,
+    "limit_up_sina": 88,
+    "limit_up": 55,
     "limit_up_source": "东财涨停池",
-    "broken": 24,
-    "limit_down": 7
+    "broken": 68,
+    "limit_down": 9
   },
-  "sectors_up": [],
-  "sectors_down": [],
-  "concepts_up": [],
-  "inflow_top5": [],
+  "sectors_up": [
+    {
+      "code": "BK1620",
+      "name": "钴",
+      "pct": 11.5,
+      "inflow": 1.17
+    },
+    {
+      "code": "BK1295",
+      "name": "其他数字媒体",
+      "pct": 7.12,
+      "inflow": -0.21
+    },
+    {
+      "code": "BK1542",
+      "name": "文化用品",
+      "pct": 6.17,
+      "inflow": 0.4
+    },
+    {
+      "code": "BK1469",
+      "name": "涂料",
+      "pct": 5.98,
+      "inflow": 0.18
+    },
+    {
+      "code": "BK1524",
+      "name": "汽车综合服务",
+      "pct": 4.16,
+      "inflow": 0.89
+    }
+  ],
+  "sectors_down": [
+    {
+      "code": "BK1616",
+      "name": "白银",
+      "pct": -4.95,
+      "inflow": -1.04
+    },
+    {
+      "code": "BK0732",
+      "name": "贵金属",
+      "pct": -4.31,
+      "inflow": -3.18
+    },
+    {
+      "code": "BK1617",
+      "name": "黄金",
+      "pct": -4.11,
+      "inflow": -2.14
+    },
+    {
+      "code": "BK1305",
+      "name": "燃料电池",
+      "pct": -3.52,
+      "inflow": 0.0
+    },
+    {
+      "code": "BK1626",
+      "name": "稀土",
+      "pct": -2.82,
+      "inflow": -5.65
+    }
+  ],
+  "concepts_up": [
+    {
+      "code": "BK0816",
+      "name": "昨日连板",
+      "pct": 4.5,
+      "inflow": -8.44
+    },
+    {
+      "code": "BK1717",
+      "name": "题材股",
+      "pct": 4.26,
+      "inflow": -21.75
+    },
+    {
+      "code": "BK1050",
+      "name": "昨日涨停_含一字",
+      "pct": 4.16,
+      "inflow": -17.71
+    },
+    {
+      "code": "BK0815",
+      "name": "昨日涨停",
+      "pct": 4.16,
+      "inflow": -17.33
+    },
+    {
+      "code": "BK1051",
+      "name": "昨日连板_含一字",
+      "pct": 4.13,
+      "inflow": -9.06
+    }
+  ],
+  "inflow_top5": [
+    {
+      "name": "电子",
+      "inflow": 64.73
+    },
+    {
+      "name": "印制电路板",
+      "inflow": 33.92
+    },
+    {
+      "name": "元件",
+      "inflow": 30.47
+    },
+    {
+      "name": "消费电子零部件及组装",
+      "inflow": 25.62
+    },
+    {
+      "name": "消费电子",
+      "inflow": 25.0
+    }
+  ],
   "limit_up_list": [],
   "limit_down_list": [
     {
-      "code": "688066",
-      "name": "*ST航图",
-      "pct": -19.914,
+      "code": "920067",
+      "name": "华晟智能",
+      "pct": -15.55,
       "reason": ""
     },
     {
-      "code": "300872",
-      "name": "天阳科技",
-      "pct": -15.957,
+      "code": "688499",
+      "name": "利元亨",
+      "pct": -13.816,
       "reason": ""
     },
     {
-      "code": "600759",
-      "name": "ST洲际",
-      "pct": -10.215,
+      "code": "300592",
+      "name": "华凯易佰",
+      "pct": -13.034,
       "reason": ""
     },
     {
-      "code": "002620",
-      "name": "*ST瑞和",
-      "pct": -10.018,
+      "code": "300500",
+      "name": "ST启设",
+      "pct": -11.063,
       "reason": ""
     },
     {
-      "code": "603358",
-      "name": "华达科技",
-      "pct": -10.004,
+      "code": "688069",
+      "name": "德林海",
+      "pct": -10.177,
       "reason": ""
     },
     {
-      "code": "603073",
-      "name": "彩蝶实业",
+      "code": "000892",
+      "name": "ST欢瑞",
+      "pct": -10.056,
+      "reason": ""
+    },
+    {
+      "code": "000010",
+      "name": "*ST美丽",
       "pct": -10.0,
       "reason": ""
     },
     {
-      "code": "603976",
-      "name": "正川股份",
+      "code": "000635",
+      "name": "英 力 特",
+      "pct": -10.0,
+      "reason": ""
+    },
+    {
+      "code": "003038",
+      "name": "鑫铂股份",
       "pct": -10.0,
       "reason": ""
     }
   ],
   "broken_list": [],
   "board": {
-    "height": 5,
-    "seal_rate": 85.9,
-    "promote_rate": 52.0,
+    "height": 4,
+    "seal_rate": 44.7,
+    "promote_rate": 19.2,
     "ladder": [
       {
-        "day": 5,
-        "count": 2,
-        "names": [
-          "真视通",
-          "盛剑科技"
-        ]
-      },
-      {
-        "day": 3,
+        "day": 4,
         "count": 1,
         "names": [
           "中京电子"
         ]
       },
       {
-        "day": 2,
-        "count": 13,
+        "day": 3,
+        "count": 4,
         "names": [
-          "德龙汇能",
           "克来机电",
-          "荣联科技",
-          "东方海洋",
-          "东晶电子",
-          "长华集团"
+          "长华集团",
+          "金新农",
+          "东方海洋"
+        ]
+      },
+      {
+        "day": 2,
+        "count": 25,
+        "names": [
+          "魅视科技",
+          "一彬科技",
+          "联创电子",
+          "汇洲智能",
+          "宁波东力",
+          "光洋股份"
         ]
       },
       {
         "day": 1,
-        "count": 130,
+        "count": 25,
         "names": [
-          "联创电子",
-          "魅视科技",
-          "华东重机",
-          "宁波东力",
-          "光洋股份",
-          "芯瑞达"
+          "天圣制药",
+          "威派格",
+          "奥康国际",
+          "天安新材",
+          "奥尼电子",
+          "起帆电缆"
         ]
       }
     ],
     "source": "东财涨停板专题(akshare)",
-    "limit_up_sealed": 146,
-    "broken": 24,
-    "promote_detail": "1进2: 今日2板13只 / 昨日首板25只"
+    "limit_up_sealed": 55,
+    "broken": 68,
+    "promote_detail": "1进2: 今日2板25只 / 昨日首板130只"
   },
   "status": {
     "indices": "ok",
-    "breadth_em": "unreachable:HTTP Error 502: Bad Gateway",
+    "breadth_em": "ok",
     "limit_up_sina": "ok",
-    "sectors": "unreachable:HTTP Error 502: Bad Gateway",
-    "concepts": "unreachable:HTTP Error 502: Bad Gateway",
-    "sectors_detail": "unreachable:HTTP Error 502: Bad Gateway",
+    "sectors": "ok",
+    "concepts": "ok",
     "board_akshare": "ok",
     "limit_up": "ok",
     "limit_down": "ok"
